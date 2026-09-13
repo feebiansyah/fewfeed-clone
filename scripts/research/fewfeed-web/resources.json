@@ -1,0 +1,112 @@
+[
+  {
+    "url": "https://fewfeed.net/tool/fb-one-card-picture-carousel",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-09-13T02:05:25.482Z",
+    "file": "page.html",
+    "sha256Sanitized": "410ae0b6211e756328f8d03c7a69e4215c8d547b77fa5c458f2e3fa24c9c84d8",
+    "bytesSanitized": 29412,
+    "redacted": true
+  },
+  {
+    "url": "https://fewfeed.net/app-2b7aa614.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:05:25.666Z",
+    "file": "app-2b7aa614.js.dd5e65cd7b.txt",
+    "sha256Sanitized": "dd5e65cd7b070f6930ce86fd913744177619d2711d055a1bac87375257f65bcb",
+    "bytesSanitized": 525840,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/index-DOs1I5qe.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:09:02.405Z",
+    "file": "index-DOs1I5qe.js.190e5274d6.txt",
+    "sha256Sanitized": "190e5274d67708c604472c338d61af2810ba5827ee998e1236e74a144d9191b9",
+    "bytesSanitized": 74841,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/worker-entry-BWLa81Qz.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:09:02.596Z",
+    "file": "worker-entry-BWLa81Qz.js.ac1c452f0c.txt",
+    "sha256Sanitized": "ac1c452f0c5e557100e9e9bae73cf02b6ca2d1c7b1dba2e2eaed1c139f9ca306",
+    "bytesSanitized": 744600,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/app-2b7aa614.js.map",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-09-13T02:09:02.682Z",
+    "file": null,
+    "sha256Sanitized": null,
+    "bytesSanitized": 0,
+    "redacted": true
+  },
+  {
+    "url": "https://fewfeed.net/assets/index-DOs1I5qe.js.map",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-09-13T02:09:02.730Z",
+    "file": null,
+    "sha256Sanitized": null,
+    "bytesSanitized": 0,
+    "redacted": true
+  },
+  {
+    "url": "https://fewfeed.net/assets/rolldown-runtime-BM3Ffeng.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:10:37.586Z",
+    "file": "rolldown-runtime-BM3Ffeng.js.101087c385.txt",
+    "sha256Sanitized": "101087c385ddfea7c37eb72790fd5aa7a3d647e85dc24171c830034ed27d3c90",
+    "bytesSanitized": 1216,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/preload-helper-3k_mjWfE.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:10:37.636Z",
+    "file": "preload-helper-3k_mjWfE.js.8b3251db58.txt",
+    "sha256Sanitized": "8b3251db5884d18b1fc8eaf0637d88310db306d279ed089853b243611362ad3f",
+    "bytesSanitized": 2246,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/framework-BG5HomRk.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:10:37.746Z",
+    "file": "framework-BG5HomRk.js.5861ff3d47.txt",
+    "sha256Sanitized": "5861ff3d479c2038a77beba8377c03c80429d5f3519cf23ea6bdb7a2c6566842",
+    "bytesSanitized": 189805,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/query-BbOc3VB2.js",
+    "status": 200,
+    "contentType": "text/javascript",
+    "retrievedAt": "2026-09-13T02:10:37.791Z",
+    "file": "query-BbOc3VB2.js.5e3ecc5fd4.txt",
+    "sha256Sanitized": "5e3ecc5fd4f80c9c8228cef75d2d4a8bb5f8f95ca267e7a4e62923aad52b5db8",
+    "bytesSanitized": 1564,
+    "redacted": false
+  },
+  {
+    "url": "https://fewfeed.net/assets/worker-entry-BWLa81Qz.js.map",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-09-13T02:10:38.108Z",
+    "file": null,
+    "sha256Sanitized": null,
+    "bytesSanitized": 0,
+    "redacted": true
+  }
+]

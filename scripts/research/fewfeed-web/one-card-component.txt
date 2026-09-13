@@ -1,0 +1,249 @@
+// EXTRACTED PUBLIC SOURCE FOR STATIC REVIEW ONLY
+function km() {
+  let {
+      account: e,
+      adsToken: t
+    } = q(),
+    {
+      user: n
+    } = An(),
+    r = n?.role ?? 5,
+    {
+      pages: i,
+      selectedPage: a,
+      selectedPageId: o,
+      setSelectedPageId: s,
+      loading: c,
+      loaded: l,
+      token: u,
+      setToken: d,
+      loadPages: f
+    } = za(!0),
+    p = Ba(),
+    [m, h] = (0, I.useState)(``),
+    [g, _] = (0, I.useState)(null),
+    [v, y] = (0, I.useState)(null),
+    [b, x] = (0, I.useState)(``),
+    [S, C] = (0, I.useState)(``),
+    [w, T] = (0, I.useState)(``),
+    [E, D] = (0, I.useState)(``),
+    [O, k] = (0, I.useState)(`LEARN_MORE`),
+    [A, j] = (0, I.useState)(``),
+    [M, N] = (0, I.useState)(!1),
+    [P, F] = (0, I.useState)(new Date(Date.now() + 1800 * 1e3)),
+    [L, R] = (0, I.useState)(!1),
+    [z, V] = (0, I.useState)(null),
+    [H, U] = (0, I.useState)({
+      ok: 0,
+      err: 0,
+      total: 1
+    }),
+    [W, G] = (0, I.useState)(``),
+    [ee, te] = (0, I.useState)(null),
+    [ne, re] = (0, I.useState)([]);
+  return (0, I.useEffect)(() => {
+    t && p.accounts.length === 0 && p.load?.();
+  }, [t]), (0, I.useEffect)(() => {
+    typeof window < `u` && window.ff?.CTA_TYPES && re(window.ff.af);
+  }, []), (0, B.jsx)(J, {
+    children: (0, B.jsxs)(`div`, {
+      className: `flex ff-sv ff-su`,
+      children: [(0, B.jsx)(Y, {
+        ok: H.ok,
+        err: H.err,
+        total: H.total
+      }), (0, B.jsx)(X, {}), (0, B.jsx)(`div`, {
+        className: `ff-baa ff-bn ff-os ff-gaa`,
+        children: (0, B.jsxs)(`div`, {
+          className: `ff-baa flex ff-sv ff-ru`,
+          children: [(0, B.jsxs)(`div`, {
+            className: `ff-os ff-gv ff-eu flex ff-sv ff-su ff-uea`,
+            children: [i.length > 0 && (0, B.jsx)(Ha, {
+              pages: i,
+              selectedPageId: o,
+              onSelect: s,
+              disabled: L,
+              label: `Facebook Page`
+            }), p.accounts.length > 0 && (0, B.jsx)(Va, {
+              selectedId: p.selectedId,
+              accounts: p.accounts,
+              onChange: p.setSelectedId,
+              loading: p.loading
+            })]
+          }), (0, B.jsxs)(`div`, {
+            className: `ff-os ff-gv ff-eu flex ff-sv ff-su ff-vea`,
+            children: [(0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Cover Image`
+              }), (0, B.jsx)(`input`, {
+                value: m,
+                onChange: e => h(e.target.value),
+                placeholder: `Image URL (or upload below)`,
+                className: `ff-baa border ff-od ff-os ff-sy ff-oda ff-hda`
+              }), (0, B.jsx)(`div`, {
+                className: `ff-jca`,
+                children: (0, B.jsx)(ua, {
+                  file: g,
+                  preview: v,
+                  onSelect: async (n, r) => {
+                    if (_(n), y(r), !(!e || !p.selectedId || !t)) try {
+                      K.loading(`Uploading image...`, {
+                        id: `imgup`
+                      });
+                      let e = await window.ff.l88(p.selectedId, r, t);
+                      e?.url && h(e.url), K.dismiss(`imgup`), K.success(`Image uploaded`);
+                    } catch {
+                      K.dismiss(`imgup`), K.error(`Upload failed — use URL instead`);
+                    }
+                  },
+                  onRemove: () => {
+                    _(null), y(null);
+                  },
+                  disabled: L,
+                  label: `Upload Image`
+                })
+              }), (m || v) && (0, B.jsx)(`img`, {
+                src: m || v || ``,
+                alt: ``,
+                referrerPolicy: `no-referrer`,
+                className: `ff-bs ff-di ff-ns border ff-jca`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Title`
+              }), (0, B.jsx)(`input`, {
+                value: b,
+                onChange: e => x(e.target.value),
+                placeholder: `Card title`,
+                className: `ff-baa border ff-od ff-os ff-sy ff-oda ff-hda`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Description`
+              }), (0, B.jsx)(`input`, {
+                value: S,
+                onChange: e => C(e.target.value),
+                placeholder: `Card description`,
+                className: `ff-baa border ff-od ff-os ff-sy ff-oda ff-hda`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Link URL`
+              }), (0, B.jsx)(`input`, {
+                value: w,
+                onChange: e => T(e.target.value),
+                placeholder: `https://example.com`,
+                className: `ff-baa border ff-od ff-os ff-sy ff-oda ff-hda`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Display URL`
+              }), (0, B.jsx)(`input`, {
+                value: E,
+                onChange: e => D(e.target.value),
+                placeholder: `example.com (shown on card)`,
+                className: `ff-baa border ff-od ff-os ff-sy ff-oda ff-hda`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `Primary Text (message)`
+              }), (0, B.jsx)(`textarea`, {
+                value: A,
+                onChange: e => j(e.target.value),
+                placeholder: `Write something...`,
+                rows: 2,
+                className: `ff-baa border ff-od ff-os ff-iq ff-sy ff-oda ff-hda`
+              })]
+            }), (0, B.jsxs)(`div`, {
+              children: [(0, B.jsx)(`p`, {
+                className: `ff-sq ff-bk ff-rca`,
+                children: `CTA Button`
+              }), (0, B.jsx)(`select`, {
+                value: O,
+                onChange: e => k(e.target.value),
+                className: `ff-baa border ff-os ff-oda ff-xca ff-sy`,
+                children: ne.filter(e => !e.is_hide).map(e => (0, B.jsx)(`option`, {
+                  value: e.id,
+                  children: e.name
+                }, e.id))
+              })]
+            }), (0, B.jsx)(ym, {
+              enabled: M,
+              setEnabled: N,
+              date: P,
+              setDate: F,
+              disabled: L,
+              roleGated: r >= 5
+            }), (0, B.jsxs)(`div`, {
+              className: `flex ff-eaa`,
+              children: [(0, B.jsx)(`button`, {
+                onClick: async () => {
+                  if (!e || !o || !m.trim() || !w.trim() || !p.selectedId) return;
+                  let t = new AbortController();
+                  te(t), R(!0), V(null), G(`Starting`), U({
+                    ok: 0,
+                    err: 0,
+                    total: 1
+                  });
+                  try {
+                    let n = await window.ff.qjn({
+                      pageId: o,
+                      adAccountId: p.selectedId,
+                      dtsg: e.dtsg,
+                      userId: e.ID,
+                      adsToken: a?.accessToken || u,
+                      imageUrl: m,
+                      title: b,
+                      description: S,
+                      linkUrl: w,
+                      displayUrl: E,
+                      ctaType: O,
+                      message: A || void 0,
+                      scheduleTime: M ? P : void 0,
+                      signal: t.signal,
+                      onProgress: e => G(e)
+                    });
+                    n ? (U({
+                      ok: 1,
+                      err: 0,
+                      total: 1
+                    }), V(`${M ? `Scheduled` : `Posted`}! ID: ${n}`), K.success(M ? `Scheduled!` : `One-card posted!`)) : (U({
+                      ok: 0,
+                      err: 1,
+                      total: 1
+                    }), V(`Failed — no post ID returned`));
+                  } catch (e) {
+                    e?.name === `AbortError` ? (V(`Cancelled`), K(`Cancelled`)) : (U({
+                      ok: 0,
+                      err: 1,
+                      total: 1
+                    }), V(`Error: ${e?.message}`));
+                  }
+                  R(!1), te(null), G(``);
+                },
+                disabled: L || !m.trim() || !w.trim() || !p.selectedId,
+                className: `ff-dz ff-oda ff-dl ff-os ff-at ff-sy ff-vf uppercase ${L ? `ff-is` : ``}`,
+                children: L ? W || `Creating...` : M ? `SCHEDULE` : `CREATE ONE-CARD POST`
+              }), L && (0, B.jsx)(`button`, {
+                onClick: () => {
+                  ee?.abort();
+                },
+                className: `ff-ida ff-oda ff-fr ff-os ff-at ff-sy ff-vf uppercase`,
+                children: `STOP`
+              })]
+            }), z && (0, B.jsx)(`p`, {
+              className: `ff-sy ff-vea ff-ns ${z.startsWith(`Error`) ? `ff-bt ff-zn` : `ff-yo ff-xg`}`,
+              children: z
+            })]
+          })]
+        })
+      })]
+    })
+  });
+}

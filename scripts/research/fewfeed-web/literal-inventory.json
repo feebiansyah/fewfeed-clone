@@ -1,0 +1,457 @@
+[
+  {
+    "start": 195,
+    "length": 494708,
+    "value": "<large literal>"
+  },
+  {
+    "start": 494908,
+    "length": 6,
+    "value": "length"
+  },
+  {
+    "start": 494923,
+    "length": 72,
+    "value": "ehXot^cWZVmׇƧnjKUf9vRq-lw+yB|~P8Cb0<E1rTQMND2=3zJOFY>spAS45xkHadi6Lg7GIu"
+  },
+  {
+    "start": 495047,
+    "length": 0,
+    "value": ""
+  },
+  {
+    "start": 495069,
+    "length": 0,
+    "value": ""
+  },
+  {
+    "start": 495827,
+    "length": 0,
+    "value": ""
+  },
+  {
+    "start": 496046,
+    "length": 1,
+    "value": "."
+  },
+  {
+    "start": 497549,
+    "length": 4,
+    "value": "ball"
+  },
+  {
+    "start": 498124,
+    "length": 4,
+    "value": "ball"
+  },
+  {
+    "start": 498433,
+    "length": 6,
+    "value": "length"
+  },
+  {
+    "start": 498477,
+    "length": 4,
+    "value": "name"
+  },
+  {
+    "start": 498519,
+    "length": 0,
+    "value": ""
+  },
+  {
+    "start": 498539,
+    "length": 2,
+    "value": ",a"
+  },
+  {
+    "start": 498558,
+    "length": 1,
+    "value": "a"
+  },
+  {
+    "start": 498593,
+    "length": 2,
+    "value": "fn"
+  },
+  {
+    "start": 498598,
+    "length": 16,
+    "value": "return function "
+  },
+  {
+    "start": 498626,
+    "length": 1,
+    "value": "("
+  },
+  {
+    "start": 498640,
+    "length": 35,
+    "value": "){return fn.apply(this, arguments)}"
+  },
+  {
+    "start": 499622,
+    "length": 8,
+    "value": "function"
+  },
+  {
+    "start": 499672,
+    "length": 10,
+    "value": "@@iterator"
+  },
+  {
+    "start": 499704,
+    "length": 15,
+    "value": "@@asyncIterator"
+  },
+  {
+    "start": 499739,
+    "length": 13,
+    "value": "@@toStringTag"
+  },
+  {
+    "start": 499873,
+    "length": 0,
+    "value": ""
+  },
+  {
+    "start": 500108,
+    "length": 28,
+    "value": "Generator is already running"
+  },
+  {
+    "start": 500153,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 500283,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 500330,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 500406,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 500436,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 500474,
+    "length": 6,
+    "value": "normal"
+  },
+  {
+    "start": 500560,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 500592,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 500659,
+    "length": 6,
+    "value": "normal"
+  },
+  {
+    "start": 500706,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 500737,
+    "length": 14,
+    "value": "suspendedStart"
+  },
+  {
+    "start": 500756,
+    "length": 14,
+    "value": "suspendedYield"
+  },
+  {
+    "start": 500775,
+    "length": 9,
+    "value": "executing"
+  },
+  {
+    "start": 500789,
+    "length": 9,
+    "value": "completed"
+  },
+  {
+    "start": 501022,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 501029,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501037,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 501245,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501295,
+    "length": 6,
+    "value": "object"
+  },
+  {
+    "start": 501324,
+    "length": 7,
+    "value": "__await"
+  },
+  {
+    "start": 501375,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 501404,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501488,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501626,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501678,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 501702,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501740,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501768,
+    "length": 46,
+    "value": "The iterator does not provide a 'throw' method"
+  },
+  {
+    "start": 501858,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501891,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 501999,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 502030,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 502077,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 502105,
+    "length": 32,
+    "value": "iterator result is not an object"
+  },
+  {
+    "start": 502332,
+    "length": 6,
+    "value": "normal"
+  },
+  {
+    "start": 502408,
+    "length": 4,
+    "value": "root"
+  },
+  {
+    "start": 502506,
+    "length": 8,
+    "value": "function"
+  },
+  {
+    "start": 502822,
+    "length": 17,
+    "value": "GeneratorFunction"
+  },
+  {
+    "start": 502883,
+    "length": 8,
+    "value": "function"
+  },
+  {
+    "start": 502938,
+    "length": 17,
+    "value": "GeneratorFunction"
+  },
+  {
+    "start": 503082,
+    "length": 17,
+    "value": "GeneratorFunction"
+  },
+  {
+    "start": 503430,
+    "length": 9,
+    "value": "Generator"
+  },
+  {
+    "start": 503500,
+    "length": 18,
+    "value": "[object Generator]"
+  },
+  {
+    "start": 503847,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 503913,
+    "length": 1,
+    "value": "t"
+  },
+  {
+    "start": 504050,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 504189,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 504227,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 504335,
+    "length": 4,
+    "value": "root"
+  },
+  {
+    "start": 504362,
+    "length": 3,
+    "value": "end"
+  },
+  {
+    "start": 504408,
+    "length": 8,
+    "value": "catchLoc"
+  },
+  {
+    "start": 504431,
+    "length": 10,
+    "value": "finallyLoc"
+  },
+  {
+    "start": 504637,
+    "length": 38,
+    "value": "try statement without catch or finally"
+  },
+  {
+    "start": 504854,
+    "length": 10,
+    "value": "finallyLoc"
+  },
+  {
+    "start": 504912,
+    "length": 5,
+    "value": "break"
+  },
+  {
+    "start": 504925,
+    "length": 8,
+    "value": "continue"
+  },
+  {
+    "start": 505044,
+    "length": 4,
+    "value": "next"
+  },
+  {
+    "start": 505121,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 505156,
+    "length": 5,
+    "value": "break"
+  },
+  {
+    "start": 505174,
+    "length": 8,
+    "value": "continue"
+  },
+  {
+    "start": 505210,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 505266,
+    "length": 6,
+    "value": "return"
+  },
+  {
+    "start": 505285,
+    "length": 3,
+    "value": "end"
+  },
+  {
+    "start": 505292,
+    "length": 6,
+    "value": "normal"
+  },
+  {
+    "start": 505618,
+    "length": 5,
+    "value": "throw"
+  },
+  {
+    "start": 505679,
+    "length": 21,
+    "value": "illegal catch attempt"
+  },
+  {
+    "start": 505795,
+    "length": 4,
+    "value": "next"
+  }
+]

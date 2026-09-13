@@ -1,0 +1,1 @@
+{"@context":"https://schema.org","@type":"WebApplication","name":"FewFeed","url":"https://fewfeed.net","description":"Free Facebook automation tools — auto post, bulk search groups, carousel creator, page manager, and 50+ marketing tools.","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}

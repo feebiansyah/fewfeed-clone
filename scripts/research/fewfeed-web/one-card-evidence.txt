@@ -1,0 +1,3103 @@
+
+=== export aliases; PC [16060,16175) ===
+16060: r6 = r8
+16063: r7 = scope[1897]
+16066: r7 = r7["ff"]
+16072: r9 = scope[1890]
+16075: r10 = scope[1836]
+16078: r8 = r9(r10)
+16082: r7["l88"] = r8
+16088: r6 = r8
+16091: r7 = scope[1897]
+16094: r7 = r7["ff"]
+16100: r9 = scope[1890]
+16103: r10 = scope[1838]
+16106: r8 = r9(r10)
+16110: r7["uco"] = r8
+16116: r6 = r8
+16119: r7 = scope[1897]
+16122: r7 = r7["ff"]
+16128: r9 = scope[1890]
+16131: r10 = scope[1840]
+16134: r8 = r9(r10)
+16138: r7["njov"] = r8
+16144: r6 = r8
+16147: r7 = scope[1897]
+16150: r7 = r7["ff"]
+16156: r9 = scope[1890]
+16159: r10 = scope[1842]
+16162: r8 = r9(r10)
+16166: r7["qjn"] = r8
+16172: r6 = r8
+
+=== uploadAdImage; PC [76724,79040) ===
+76724: local[5513] = r4
+76727: local[5514] = r5
+76730: local[5515] = r6
+76733: r9 = scope[1837]
+76736: r10 = Array(2)
+76739: r11 = this
+76741: r10[0] = r11
+76745: r11 = r3
+76748: r10[1] = r11
+76752: r11 = r9["apply"]
+76758: r2 = APPLY r11 THIS r9 ARGS r10
+76762: r8 = r2
+76765: return r8
+76767: return undefined
+76768: r7 = scope[999]
+76771: r10 = scope[980]
+76774: r9 = r10()
+76777: r10 = Array(1)
+76780: r11 = function@76852(arity=3, name="")
+76787: local[326] = r11
+76790: r10[0] = r11
+76794: r11 = r9["m"]
+76800: r2 = APPLY r11 THIS r9 ARGS r10
+76804: r8 = r2
+76807: r6 = r7(r8)
+76811: scope[1837] = r6
+76814: r5 = r6
+76817: r6 = scope[1837]
+76820: r7 = Array(2)
+76823: r8 = this
+76825: r7[0] = r8
+76829: r8 = r3
+76832: r7[1] = r8
+76836: r8 = r6["apply"]
+76842: r2 = APPLY r8 THIS r6 ARGS r7
+76846: r5 = r2
+76849: return r5
+76851: return undefined
+76852: local[1040] = r4
+76855: local[1041] = r5
+76858: local[1081] = r6
+76861: r8 = scope[326]
+76864: local[5521] = r8
+76867: local[5522] = undefined
+76869: local[5523] = undefined
+76871: local[5524] = undefined
+76873: local[5525] = undefined
+76875: local[5526] = undefined
+76877: local[5527] = undefined
+76879: local[5528] = undefined
+76881: local[5529] = undefined
+76883: local[5530] = undefined
+76885: local[1083] = undefined
+76887: local[1703] = undefined
+76889: local[5531] = undefined
+76891: local[1228] = undefined
+76893: local[5532] = undefined
+76895: local[5533] = undefined
+76897: local[5534] = undefined
+76899: local[5535] = undefined
+76901: r10 = scope[980]
+76904: r9 = r10()
+76907: r10 = Array(4)
+76910: r11 = function@76979(arity=1, name="")
+76917: r10[0] = r11
+76921: r11 = scope[5521]
+76924: r10[1] = r11
+76928: r11 = null
+76931: r10[2] = r11
+76935: r11 = Array(1)
+76938: r12 = Array(2)
+76941: r13 = 0
+76944: r12[0] = r13
+76948: r13 = 11
+76951: r12[1] = r13
+76955: r11[0] = r12
+76959: r10[3] = r11
+76963: r11 = r9["w"]
+76969: r2 = APPLY r11 THIS r9 ARGS r10
+76973: r8 = r2
+76976: return r8
+76978: return undefined
+76979: local[5539] = r4
+76982: r6 = 1
+76985: if !r6 goto 78890
+76988: r6 = scope[5539]
+76991: r6 = r6["n"]
+76997: r7 = 0
+77000: r8 = r7 === r6
+77004: if r8 goto 77117
+77007: r7 = 1
+77010: r8 = r7 === r6
+77014: if r8 goto 77230
+77017: r7 = 2
+77020: r8 = r7 === r6
+77024: if r8 goto 77262
+77027: r7 = 3
+77030: r8 = r7 === r6
+77034: if r8 goto 77412
+77037: r7 = 4
+77040: r8 = r7 === r6
+77044: if r8 goto 77441
+77047: r7 = 5
+77050: r8 = r7 === r6
+77054: if r8 goto 77491
+77057: r7 = 6
+77060: r8 = r7 === r6
+77064: if r8 goto 77683
+77067: r7 = 7
+77070: r8 = r7 === r6
+77074: if r8 goto 77826
+77077: r7 = 8
+77080: r8 = r7 === r6
+77084: if r8 goto 78397
+77087: r7 = 9
+77090: r8 = r7 === r6
+77094: if r8 goto 78447
+77097: r7 = 10
+77100: r8 = r7 === r6
+77104: if r8 goto 78788
+77107: r7 = 11
+77110: r8 = r7 === r6
+77114: if r8 goto 78823
+77117: r8 = scope[5539]
+77120: r9 = 0
+77123: r8["p"] = r9
+77129: r7 = r9
+77132: r8 = scope[1041]
+77135: r9 = window["File"]
+77140: r8 = r8 instanceof r9
+77144: r7 = !r8
+77147: if !r7 goto 77167
+77150: r9 = scope[5539]
+77153: r10 = 2
+77156: r9["n"] = r10
+77162: r8 = r10
+77165: goto 78890
+77167: r8 = scope[1041]
+77170: r8 = r8["name"]
+77176: if r8 goto 77187
+77179: r9 = "image.jpg"
+77184: r8 = r9
+77187: scope[5523] = r8
+77190: r7 = r8
+77193: r8 = scope[5539]
+77196: r9 = 1
+77199: r8["n"] = r9
+77205: r7 = r9
+77208: r7 = Promise
+77210: r8 = Array(1)
+77213: r9 = function@78891(arity=2, name="")
+77220: r8[0] = r9
+77224: r7 = CONSTRUCT r7 ARGS r8
+77228: return r7
+77230: r8 = scope[5539]
+77233: r8 = r8["v"]
+77239: scope[5522] = r8
+77242: r7 = r8
+77245: r8 = scope[5539]
+77248: r9 = 7
+77251: r8["n"] = r9
+77257: r7 = r9
+77260: goto 78890
+77262: r8 = "string"
+77267: r10 = scope[1041]
+77270: r9 = typeof r10
+77273: r8 = r8 == r9
+77277: if !r8 goto 77311
+77280: r10 = scope[1041]
+77283: r11 = Array(1)
+77286: r12 = "data:"
+77291: r11[0] = r12
+77295: r12 = r10["startsWith"]
+77301: r2 = APPLY r12 THIS r10 ARGS r11
+77305: r9 = r2
+77308: r8 = r9
+77311: r7 = !r8
+77314: if !r7 goto 77334
+77317: r9 = scope[5539]
+77320: r10 = 3
+77323: r9["n"] = r10
+77329: r8 = r10
+77332: goto 78890
+77334: r8 = "image.jpg"
+77339: scope[5523] = r8
+77342: r7 = r8
+77345: r9 = scope[1041]
+77348: r10 = Array(1)
+77351: r11 = ","
+77356: r10[0] = r11
+77360: r11 = r9["split"]
+77366: r2 = APPLY r11 THIS r9 ARGS r10
+77370: r8 = r2
+77373: r9 = 1
+77376: r8 = r8[r9]
+77380: if r8 goto 77389
+77383: r9 = scope[1041]
+77386: r8 = r9
+77389: scope[5522] = r8
+77392: r7 = r8
+77395: r8 = scope[5539]
+77398: r9 = 7
+77401: r8["n"] = r9
+77407: r7 = r9
+77410: goto 78890
+77412: r8 = scope[5539]
+77415: r9 = 4
+77418: r8["n"] = r9
+77424: r7 = r9
+77427: r8 = window["fetch"]
+77432: r9 = scope[1041]
+77435: r7 = r8(r9)
+77439: return r7
+77441: r8 = scope[5539]
+77444: r8 = r8["v"]
+77450: scope[5525] = r8
+77453: r7 = r8
+77456: r8 = scope[5539]
+77459: r9 = 5
+77462: r8["n"] = r9
+77468: r7 = r9
+77471: r8 = scope[5525]
+77474: r9 = []
+77476: r10 = r8["blob"]
+77482: r2 = APPLY r10 THIS r8 ARGS r9
+77486: r7 = r2
+77489: return r7
+77491: r8 = scope[5539]
+77494: r8 = r8["v"]
+77500: scope[5526] = r8
+77503: r7 = r8
+77506: r8 = null
+77509: r12 = scope[1041]
+77512: r13 = Array(1)
+77515: r14 = "/"
+77520: r13[0] = r14
+77524: r14 = r12["split"]
+77530: r2 = APPLY r14 THIS r12 ARGS r13
+77534: r11 = r2
+77537: r12 = []
+77539: r13 = r11["pop"]
+77545: r2 = APPLY r13 THIS r11 ARGS r12
+77549: r10 = r2
+77552: scope[5524] = r10
+77555: r9 = r10
+77558: r8 = r8 === r9
+77562: if r8 goto 77580
+77565: r10 = 0
+77568: r9 = undefined
+77570: r10 = scope[5524]
+77573: r9 = r9 === r10
+77577: r8 = r9
+77580: if !r8 goto 77593
+77583: r10 = 0
+77586: r9 = undefined
+77588: r8 = r9
+77591: goto 77631
+77593: r11 = scope[5524]
+77596: r12 = Array(1)
+77599: r13 = "?"
+77604: r12[0] = r13
+77608: r13 = r11["split"]
+77614: r2 = APPLY r13 THIS r11 ARGS r12
+77618: r10 = r2
+77621: r11 = 0
+77624: r10 = r10[r11]
+77628: r8 = r10
+77631: if r8 goto 77642
+77634: r9 = "image.jpg"
+77639: r8 = r9
+77642: scope[5523] = r8
+77645: r7 = r8
+77648: r8 = scope[5539]
+77651: r9 = 6
+77654: r8["n"] = r9
+77660: r7 = r9
+77663: r8 = scope[5526]
+77666: r9 = []
+77668: r10 = r8["arrayBuffer"]
+77674: r2 = APPLY r10 THIS r8 ARGS r9
+77678: r7 = r2
+77681: return r7
+77683: r8 = scope[5539]
+77686: r8 = r8["v"]
+77692: scope[5527] = r8
+77695: r7 = r8
+77698: r8 = window["Uint8Array"]
+77703: r9 = Array(1)
+77706: r10 = scope[5527]
+77709: r9[0] = r10
+77713: r8 = CONSTRUCT r8 ARGS r9
+77717: scope[5528] = r8
+77720: r7 = r8
+77723: r8 = ""
+77728: scope[5529] = r8
+77731: r7 = r8
+77734: r8 = 0
+77737: scope[5530] = r8
+77740: r7 = r8
+77743: r7 = scope[5530]
+77746: r8 = scope[5528]
+77749: r8 = r8["length"]
+77755: r7 = r7 < r8
+77759: if !r7 goto 77808
+77762: r8 = scope[5529]
+77765: r10 = scope[1864]
+77768: r11 = scope[5528]
+77771: r12 = scope[5530]
+77774: r11 = r11[r12]
+77778: r9 = r10(r11)
+77782: r8 = r8 + r9
+77786: scope[5529] = r8
+77789: r7 = r8
+77792: r8 = scope[5530]
+77795: r7 = r8 + 1
+77799: scope[5530] = r7
+77802: r7 = r7 - 1
+77806: goto 77743
+77808: r9 = window["btoa"]
+77813: r10 = scope[5529]
+77816: r8 = r9(r10)
+77820: scope[5522] = r8
+77823: r7 = r8
+77826: r8 = window["FormData"]
+77831: r9 = []
+77833: r8 = CONSTRUCT r8 ARGS r9
+77837: scope[1083] = r8
+77840: r7 = r8
+77843: r8 = scope[1083]
+77846: r9 = Array(2)
+77849: r10 = "bytes"
+77854: r9[0] = r10
+77858: r10 = scope[5522]
+77861: r9[1] = r10
+77865: r10 = r8["append"]
+77871: r2 = APPLY r10 THIS r8 ARGS r9
+77875: r7 = r2
+77878: r8 = scope[1083]
+77881: r9 = Array(2)
+77884: r10 = "access_token"
+77889: r9[0] = r10
+77893: r10 = scope[1081]
+77896: r9[1] = r10
+77900: r10 = r8["append"]
+77906: r2 = APPLY r10 THIS r8 ARGS r9
+77910: r7 = r2
+77913: r8 = scope[1083]
+77916: r9 = Array(2)
+77919: r10 = "image_creation_source"
+77924: r9[0] = r10
+77928: r10 = "ADVERTISER_MANUAL_UPLOAD"
+77933: r9[1] = r10
+77937: r10 = r8["append"]
+77943: r2 = APPLY r10 THIS r8 ARGS r9
+77947: r7 = r2
+77950: r8 = scope[1083]
+77953: r9 = Array(2)
+77956: r10 = "include_headers"
+77961: r9[0] = r10
+77965: r10 = "false"
+77970: r9[1] = r10
+77974: r10 = r8["append"]
+77980: r2 = APPLY r10 THIS r8 ARGS r9
+77984: r7 = r2
+77987: r8 = scope[1083]
+77990: r9 = Array(2)
+77993: r10 = "locale"
+77998: r9[0] = r10
+78002: r10 = "en_US"
+78007: r9[1] = r10
+78011: r10 = r8["append"]
+78017: r2 = APPLY r10 THIS r8 ARGS r9
+78021: r7 = r2
+78024: r8 = scope[1083]
+78027: r9 = Array(2)
+78030: r10 = "method"
+78035: r9[0] = r10
+78039: r10 = "post"
+78044: r9[1] = r10
+78048: r10 = r8["append"]
+78054: r2 = APPLY r10 THIS r8 ARGS r9
+78058: r7 = r2
+78061: r8 = scope[1083]
+78064: r9 = Array(2)
+78067: r10 = "name"
+78072: r9[0] = r10
+78076: r10 = scope[5523]
+78079: r9[1] = r10
+78083: r10 = r8["append"]
+78089: r2 = APPLY r10 THIS r8 ARGS r9
+78093: r7 = r2
+78096: r8 = scope[1083]
+78099: r9 = Array(2)
+78102: r10 = "pretty"
+78107: r9[0] = r10
+78111: r10 = "0"
+78116: r9[1] = r10
+78120: r10 = r8["append"]
+78126: r2 = APPLY r10 THIS r8 ARGS r9
+78130: r7 = r2
+78133: r8 = scope[1083]
+78136: r9 = Array(2)
+78139: r10 = "show_in_giyimage_library"
+78144: r9[0] = r10
+78148: r10 = "true"
+78153: r9[1] = r10
+78157: r10 = r8["append"]
+78163: r2 = APPLY r10 THIS r8 ARGS r9
+78167: r7 = r2
+78170: r8 = scope[1083]
+78173: r9 = Array(2)
+78176: r10 = "suppress_http_code"
+78181: r9[0] = r10
+78185: r10 = "1"
+78190: r9[1] = r10
+78194: r10 = r8["append"]
+78200: r2 = APPLY r10 THIS r8 ARGS r9
+78204: r7 = r2
+78207: r8 = scope[1083]
+78210: r9 = Array(2)
+78213: r10 = "fb_api_caller_class"
+78218: r9[0] = r10
+78222: r10 = "RelayModern"
+78227: r9[1] = r10
+78231: r10 = r8["append"]
+78237: r2 = APPLY r10 THIS r8 ARGS r9
+78241: r7 = r2
+78244: r8 = scope[1083]
+78247: r9 = Array(2)
+78250: r10 = "__ad_account_id"
+78255: r9[0] = r10
+78259: r10 = scope[1040]
+78262: r9[1] = r10
+78266: r10 = r8["append"]
+78272: r2 = APPLY r10 THIS r8 ARGS r9
+78276: r7 = r2
+78279: r8 = scope[5539]
+78282: r9 = 8
+78285: r8["n"] = r9
+78291: r7 = r9
+78294: r8 = window["fetch"]
+78299: r11 = "https://graph.facebook.com/v21.0/act_"
+78304: r12 = Array(2)
+78307: r13 = scope[1040]
+78310: r12[0] = r13
+78314: r13 = "/adimages/?access_token="
+78319: r12[1] = r13
+78323: r13 = r11["concat"]
+78329: r2 = APPLY r13 THIS r11 ARGS r12
+78333: r10 = r2
+78336: r11 = Array(2)
+78339: r12 = scope[1081]
+78342: r11[0] = r12
+78346: r12 = "&method=post&__cppo=1&fields=url&fewfeedcors=0"
+78351: r11[1] = r12
+78355: r12 = r10["concat"]
+78361: r2 = APPLY r12 THIS r10 ARGS r11
+78365: r9 = r2
+78368: r10 = {}
+78370: r11 = "POST"
+78375: r10["method"] = r11
+78381: r11 = scope[1083]
+78384: r10["body"] = r11
+78390: r7 = r8(r9, r10)
+78395: return r7
+78397: r8 = scope[5539]
+78400: r8 = r8["v"]
+78406: scope[1703] = r8
+78409: r7 = r8
+78412: r8 = scope[5539]
+78415: r9 = 9
+78418: r8["n"] = r9
+78424: r7 = r9
+78427: r8 = scope[1703]
+78430: r9 = []
+78432: r10 = r8["json"]
+78438: r2 = APPLY r10 THIS r8 ARGS r9
+78442: r7 = r2
+78445: return r7
+78447: r8 = scope[5539]
+78450: r8 = r8["v"]
+78456: scope[5531] = r8
+78459: r7 = r8
+78462: r8 = null
+78465: r9 = scope[5531]
+78468: r8 = r8 === r9
+78472: if r8 goto 78490
+78475: r10 = 0
+78478: r9 = undefined
+78480: r10 = scope[5531]
+78483: r9 = r9 === r10
+78487: r8 = r9
+78490: if !r8 goto 78503
+78493: r10 = 0
+78496: r9 = undefined
+78498: r8 = r9
+78501: goto 78515
+78503: r10 = scope[5531]
+78506: r10 = r10["images"]
+78512: r8 = r10
+78515: scope[1228] = r8
+78518: r7 = r8
+78521: r8 = scope[1228]
+78524: r7 = !r8
+78527: if !r7 goto 78547
+78530: r9 = scope[5539]
+78533: r10 = 10
+78536: r9["n"] = r10
+78542: r8 = r10
+78545: goto 78890
+78547: r9 = window["Object"]
+78552: r10 = Array(1)
+78555: r11 = scope[1228]
+78558: r10[0] = r11
+78562: r11 = r9["keys"]
+78568: r2 = APPLY r11 THIS r9 ARGS r10
+78572: r8 = r2
+78575: r9 = 0
+78578: r8 = r8[r9]
+78582: scope[5534] = r8
+78585: r7 = r8
+78588: r8 = scope[5539]
+78591: r9 = Array(2)
+78594: r10 = 2
+78597: r9[0] = r10
+78601: r10 = {}
+78603: r11 = null
+78606: r13 = scope[1228]
+78609: r14 = scope[5534]
+78612: r13 = r13[r14]
+78616: scope[5532] = r13
+78619: r12 = r13
+78622: r11 = r11 === r12
+78626: if r11 goto 78644
+78629: r13 = 0
+78632: r12 = undefined
+78634: r13 = scope[5532]
+78637: r12 = r12 === r13
+78641: r11 = r12
+78644: if !r11 goto 78657
+78647: r13 = 0
+78650: r12 = undefined
+78652: r11 = r12
+78655: goto 78669
+78657: r13 = scope[5532]
+78660: r13 = r13["hash"]
+78666: r11 = r13
+78669: if r11 goto 78680
+78672: r12 = ""
+78677: r11 = r12
+78680: r10["hash"] = r11
+78686: r11 = null
+78689: r13 = scope[1228]
+78692: r14 = scope[5534]
+78695: r13 = r13[r14]
+78699: scope[5533] = r13
+78702: r12 = r13
+78705: r11 = r11 === r12
+78709: if r11 goto 78727
+78712: r13 = 0
+78715: r12 = undefined
+78717: r13 = scope[5533]
+78720: r12 = r12 === r13
+78724: r11 = r12
+78727: if !r11 goto 78740
+78730: r13 = 0
+78733: r12 = undefined
+78735: r11 = r12
+78738: goto 78752
+78740: r13 = scope[5533]
+78743: r13 = r13["url"]
+78749: r11 = r13
+78752: if r11 goto 78763
+78755: r12 = ""
+78760: r11 = r12
+78763: r10["url"] = r11
+78769: r9[1] = r10
+78773: r10 = r8["a"]
+78779: r2 = APPLY r10 THIS r8 ARGS r9
+78783: r7 = r2
+78786: return r7
+78788: r8 = scope[5539]
+78791: r9 = Array(2)
+78794: r10 = 2
+78797: r9[0] = r10
+78801: r10 = null
+78804: r9[1] = r10
+78808: r10 = r8["a"]
+78814: r2 = APPLY r10 THIS r8 ARGS r9
+78818: r7 = r2
+78821: return r7
+78823: r8 = scope[5539]
+78826: r9 = 11
+78829: r8["p"] = r9
+78835: r7 = r9
+78838: r8 = scope[5539]
+78841: r8 = r8["v"]
+78847: scope[5535] = r8
+78850: r7 = r8
+78853: r8 = scope[5539]
+78856: r9 = Array(2)
+78859: r10 = 2
+78862: r9[0] = r10
+78866: r10 = null
+78869: r9[1] = r10
+78873: r10 = r8["a"]
+78879: r2 = APPLY r10 THIS r8 ARGS r9
+78883: r7 = r2
+78886: return r7
+78888: goto 76982
+78890: return undefined
+78891: local[1040] = r4
+78894: local[1081] = r5
+78897: local[1078] = undefined
+78899: r7 = window["FileReader"]
+78904: r8 = []
+78906: r7 = CONSTRUCT r7 ARGS r8
+78910: scope[1078] = r7
+78913: r8 = scope[1078]
+78916: r9 = function@78974(arity=0, name="")
+78923: r8["onload"] = r9
+78929: r7 = r9
+78932: r8 = scope[1078]
+78935: r9 = scope[1081]
+78938: r8["onerror"] = r9
+78944: r7 = r9
+78947: r8 = scope[1078]
+78950: r9 = Array(1)
+78953: r10 = scope[1041]
+78956: r9[0] = r10
+78960: r10 = r8["readAsDataURL"]
+78966: r2 = APPLY r10 THIS r8 ARGS r9
+78970: r7 = r2
+78973: return undefined
+78974: local[1041] = undefined
+78976: r5 = scope[1078]
+78979: r5 = r5["result"]
+78985: scope[1041] = r5
+78988: r6 = scope[1040]
+78991: r8 = scope[1041]
+78994: r9 = Array(1)
+78997: r10 = ","
+79002: r9[0] = r10
+79006: r10 = r8["split"]
+79012: r2 = APPLY r10 THIS r8 ARGS r9
+79016: r7 = r2
+79019: r8 = 1
+79022: r7 = r7[r8]
+79026: if r7 goto 79035
+79029: r8 = scope[1041]
+79032: r7 = r8
+79035: r5 = r6(r7)
+79039: return undefined
+
+=== OneCard entry, builder, polling, finalization; PC [81784,86092) ===
+81784: local[5774] = r4
+81787: r7 = scope[1843]
+81790: r8 = Array(2)
+81793: r9 = this
+81795: r8[0] = r9
+81799: r9 = r3
+81802: r8[1] = r9
+81806: r9 = r7["apply"]
+81812: r2 = APPLY r9 THIS r7 ARGS r8
+81816: r6 = r2
+81819: return r6
+81821: return undefined
+81822: r7 = scope[999]
+81825: r10 = scope[980]
+81828: r9 = r10()
+81831: r10 = Array(1)
+81834: r11 = function@81906(arity=1, name="")
+81841: local[345] = r11
+81844: r10[0] = r11
+81848: r11 = r9["m"]
+81854: r2 = APPLY r11 THIS r9 ARGS r10
+81858: r8 = r2
+81861: r6 = r7(r8)
+81865: scope[1843] = r6
+81868: r5 = r6
+81871: r6 = scope[1843]
+81874: r7 = Array(2)
+81877: r8 = this
+81879: r7[0] = r8
+81883: r8 = r3
+81886: r7[1] = r8
+81890: r8 = r6["apply"]
+81896: r2 = APPLY r8 THIS r6 ARGS r7
+81900: r5 = r2
+81903: return r5
+81905: return undefined
+81906: local[5780] = r4
+81909: r6 = scope[345]
+81912: local[5781] = r6
+81915: local[5782] = undefined
+81917: local[1040] = undefined
+81919: local[1041] = undefined
+81921: local[1081] = undefined
+81923: local[1078] = undefined
+81925: local[1042] = undefined
+81927: local[1083] = undefined
+81929: local[1703] = undefined
+81931: local[1079] = undefined
+81933: local[1228] = undefined
+81935: local[1077] = undefined
+81937: local[1262] = undefined
+81939: local[1263] = undefined
+81941: local[1080] = undefined
+81943: local[5783] = undefined
+81945: local[1757] = undefined
+81947: local[1082] = undefined
+81949: local[1758] = undefined
+81951: local[1759] = undefined
+81953: local[1760] = undefined
+81955: local[1264] = undefined
+81957: local[1761] = undefined
+81959: local[1762] = undefined
+81961: local[1764] = undefined
+81963: local[1765] = undefined
+81965: local[1766] = undefined
+81967: local[1767] = undefined
+81969: local[1769] = undefined
+81971: local[1771] = undefined
+81973: local[1773] = undefined
+81975: local[5784] = undefined
+81977: local[5785] = undefined
+81979: local[5786] = undefined
+81981: local[5787] = undefined
+81983: local[1775] = undefined
+81985: local[1776] = undefined
+81987: local[1778] = undefined
+81989: local[1779] = undefined
+81991: local[1780] = undefined
+81993: local[1781] = undefined
+81995: local[5788] = undefined
+81997: local[5789] = undefined
+81999: local[5790] = undefined
+82001: local[5791] = undefined
+82003: r8 = scope[980]
+82006: r7 = r8()
+82009: r8 = Array(2)
+82012: r9 = function@82046(arity=1, name="")
+82019: r8[0] = r9
+82023: r9 = scope[5781]
+82026: r8[1] = r9
+82030: r9 = r7["w"]
+82036: r2 = APPLY r9 THIS r7 ARGS r8
+82040: r6 = r2
+82043: return r6
+82045: return undefined
+82046: local[5795] = r4
+82049: r6 = 1
+82052: if !r6 goto 85814
+82055: r6 = scope[5795]
+82058: r6 = r6["n"]
+82064: r7 = 0
+82067: r8 = r7 === r6
+82071: if r8 goto 82344
+82074: r7 = 1
+82077: r8 = r7 === r6
+82081: if r8 goto 83014
+82084: r7 = 2
+82087: r8 = r7 === r6
+82091: if r8 goto 83096
+82094: r7 = 3
+82097: r8 = r7 === r6
+82101: if r8 goto 83169
+82104: r7 = 4
+82107: r8 = r7 === r6
+82111: if r8 goto 83267
+82114: r7 = 5
+82117: r8 = r7 === r6
+82121: if r8 goto 83340
+82124: r7 = 6
+82127: r8 = r7 === r6
+82131: if r8 goto 83413
+82134: r7 = 7
+82137: r8 = r7 === r6
+82141: if r8 goto 83528
+82144: r7 = 8
+82147: r8 = r7 === r6
+82151: if r8 goto 83575
+82154: r7 = 9
+82157: r8 = r7 === r6
+82161: if r8 goto 83722
+82164: r7 = 10
+82167: r8 = r7 === r6
+82171: if r8 goto 83780
+82174: r7 = 11
+82177: r8 = r7 === r6
+82181: if r8 goto 83827
+82184: r7 = 12
+82187: r8 = r7 === r6
+82191: if r8 goto 84036
+82194: r7 = 13
+82197: r8 = r7 === r6
+82201: if r8 goto 84051
+82204: r7 = 14
+82207: r8 = r7 === r6
+82211: if r8 goto 84712
+82214: r7 = 15
+82217: r8 = r7 === r6
+82221: if r8 goto 84762
+82224: r7 = 16
+82227: r8 = r7 === r6
+82231: if r8 goto 84911
+82234: r7 = 17
+82237: r8 = r7 === r6
+82241: if r8 goto 84941
+82244: r7 = 18
+82247: r8 = r7 === r6
+82251: if r8 goto 85072
+82254: r7 = 19
+82257: r8 = r7 === r6
+82261: if r8 goto 85179
+82264: r7 = 20
+82267: r8 = r7 === r6
+82271: if r8 goto 85229
+82274: r7 = 21
+82277: r8 = r7 === r6
+82281: if r8 goto 85360
+82284: r7 = 22
+82287: r8 = r7 === r6
+82291: if r8 goto 85397
+82294: r7 = 23
+82297: r8 = r7 === r6
+82301: if r8 goto 85428
+82304: r7 = 24
+82307: r8 = r7 === r6
+82311: if r8 goto 85486
+82314: r7 = 25
+82317: r8 = r7 === r6
+82321: if r8 goto 85666
+82324: r7 = 26
+82327: r8 = r7 === r6
+82331: if r8 goto 85683
+82334: r7 = 27
+82337: r8 = r7 === r6
+82341: if r8 goto 85777
+82344: r8 = scope[5780]
+82347: r8 = r8["pageId"]
+82353: scope[1040] = r8
+82356: r7 = r8
+82359: r8 = scope[5780]
+82362: r8 = r8["adAccountId"]
+82368: scope[1041] = r8
+82371: r7 = r8
+82374: r8 = scope[5780]
+82377: r8 = r8["dtsg"]
+82383: scope[1081] = r8
+82386: r7 = r8
+82389: r8 = scope[5780]
+82392: r8 = r8["userId"]
+82398: scope[1078] = r8
+82401: r7 = r8
+82404: r8 = scope[5780]
+82407: r8 = r8["adsToken"]
+82413: scope[1042] = r8
+82416: r7 = r8
+82419: r8 = scope[5780]
+82422: r8 = r8["signal"]
+82428: scope[1083] = r8
+82431: r7 = r8
+82434: r8 = scope[5780]
+82437: r8 = r8["imageUrl"]
+82443: scope[1703] = r8
+82446: r7 = r8
+82449: r8 = scope[5780]
+82452: r8 = r8["videoUrl"]
+82458: scope[1079] = r8
+82461: r7 = r8
+82464: r8 = scope[5780]
+82467: r8 = r8["dtsgAg"]
+82473: scope[1228] = r8
+82476: r7 = r8
+82479: r8 = scope[5780]
+82482: r8 = r8["title"]
+82488: scope[1077] = r8
+82491: r7 = r8
+82494: r8 = scope[5780]
+82497: r8 = r8["description"]
+82503: scope[1262] = r8
+82506: r7 = r8
+82509: r8 = scope[5780]
+82512: r8 = r8["linkUrl"]
+82518: scope[1263] = r8
+82521: r7 = r8
+82524: r8 = scope[5780]
+82527: r8 = r8["displayUrl"]
+82533: scope[1080] = r8
+82536: r7 = r8
+82539: r8 = scope[5780]
+82542: r8 = r8["ctaType"]
+82548: scope[5783] = r8
+82551: r7 = r8
+82554: r9 = 0
+82557: r8 = undefined
+82559: r9 = scope[5783]
+82562: r8 = r8 === r9
+82566: if !r8 goto 82579
+82569: r9 = "LEARN_MORE"
+82574: r8 = r9
+82577: goto 82585
+82579: r10 = scope[5783]
+82582: r8 = r10
+82585: scope[1757] = r8
+82588: r7 = r8
+82591: r8 = scope[5780]
+82594: r8 = r8["message"]
+82600: scope[1082] = r8
+82603: r7 = r8
+82606: r8 = scope[5780]
+82609: r8 = r8["watermarkText"]
+82615: scope[1758] = r8
+82618: r7 = r8
+82621: r8 = scope[5780]
+82624: r8 = r8["scheduleTime"]
+82630: scope[1759] = r8
+82633: r7 = r8
+82636: r8 = scope[5780]
+82639: r8 = r8["isDraft"]
+82645: scope[1760] = r8
+82648: r7 = r8
+82651: r8 = scope[5780]
+82654: r8 = r8["isHidePost"]
+82660: scope[1264] = r8
+82663: r7 = r8
+82666: r8 = scope[5780]
+82669: r8 = r8["pageAccessToken"]
+82675: scope[1761] = r8
+82678: r7 = r8
+82681: r8 = scope[5780]
+82684: r8 = r8["onProgress"]
+82690: scope[1762] = r8
+82693: r7 = r8
+82696: r8 = function@85815(arity=1, name="")
+82703: local[348] = r8
+82706: scope[1764] = r8
+82709: r7 = r8
+82712: r8 = "NO_BUTTON_V2"
+82717: r9 = scope[1757]
+82720: r8 = r8 === r9
+82724: scope[1765] = r8
+82727: r7 = r8
+82730: r9 = scope[1793]
+82733: r8 = r9()
+82736: scope[1766] = r8
+82739: r7 = r8
+82742: r8 = scope[1080]
+82745: scope[1767] = r8
+82748: r7 = r8
+82751: r7 = scope[1765]
+82754: if !r7 goto 82784
+82757: r9 = "           "
+82762: scope[1262] = r9
+82765: r8 = r9
+82768: r9 = "         "
+82773: scope[1077] = r9
+82776: r8 = r9
+82779: r7 = r8
+82782: goto 82815
+82784: r9 = scope[1766]
+82787: if !r9 goto 82812
+82790: r12 = scope[1763]
+82793: r14 = scope[1265]
+82796: r13 = r14()
+82799: r11 = r12(r13)
+82803: scope[1262] = r11
+82806: r10 = r11
+82809: r9 = r10
+82812: r7 = r9
+82815: r7 = scope[1766]
+82818: if !r7 goto 82863
+82821: r9 = "x.com? BY V2.FEWFEED.COM "
+82826: scope[1767] = r9
+82829: r8 = r9
+82832: r8 = scope[1758]
+82835: if r8 goto 82860
+82838: r11 = scope[1763]
+82841: r13 = scope[1265]
+82844: r12 = r13()
+82847: r10 = r11(r12)
+82851: scope[1758] = r10
+82854: r9 = r10
+82857: r8 = r9
+82860: r7 = r8
+82863: r8 = null
+82866: scope[1769] = r8
+82869: r7 = r8
+82872: r8 = null
+82875: scope[1771] = r8
+82878: r7 = r8
+82881: r8 = null
+82884: scope[1773] = r8
+82887: r7 = r8
+82890: r8 = scope[1079]
+82893: r7 = !r8
+82896: if !r7 goto 82916
+82899: r9 = scope[5795]
+82902: r10 = 9
+82905: r9["n"] = r10
+82911: r8 = r10
+82914: goto 85814
+82916: r8 = null
+82919: r9 = scope[1083]
+82922: r8 = r8 !== r9
+82926: if !r8 goto 82944
+82929: r10 = 0
+82932: r9 = undefined
+82934: r10 = scope[1083]
+82937: r9 = r9 !== r10
+82941: r8 = r9
+82944: if !r8 goto 82959
+82947: r9 = scope[1083]
+82950: r9 = r9["aborted"]
+82956: r8 = r9
+82959: r7 = !r8
+82962: if !r7 goto 82982
+82965: r9 = scope[5795]
+82968: r10 = 1
+82971: r9["n"] = r10
+82977: r8 = r10
+82980: goto 85814
+82982: r7 = window["DOMException"]
+82987: r8 = Array(2)
+82990: r9 = "Aborted"
+82995: r8[0] = r9
+82999: r9 = "AbortError"
+83004: r8[1] = r9
+83008: r7 = CONSTRUCT r7 ARGS r8
+83012: throw r7
+83014: r8 = scope[1764]
+83017: r9 = "Extracting video source"
+83022: r7 = r8(r9)
+83026: r8 = scope[5795]
+83029: r9 = 2
+83032: r8["n"] = r9
+83038: r7 = r9
+83041: r8 = scope[1800]
+83044: r9 = Array(4)
+83047: r10 = scope[1079]
+83050: r9[0] = r10
+83054: r10 = scope[1228]
+83057: if r10 goto 83066
+83060: r11 = scope[1081]
+83063: r10 = r11
+83066: r9[1] = r10
+83070: r10 = scope[1078]
+83073: r9[2] = r10
+83077: r10 = scope[1083]
+83080: r9[3] = r10
+83084: r10 = scope[1]
+83087: r2 = APPLY r8 THIS r10 ARGS r9
+83091: r7 = r2
+83094: return r7
+83096: r8 = scope[5795]
+83099: r8 = r8["v"]
+83105: scope[5785] = r8
+83108: r7 = r8
+83111: r7 = scope[5785]
+83114: if !r7 goto 83134
+83117: r9 = scope[5795]
+83120: r10 = 3
+83123: r9["n"] = r10
+83129: r8 = r10
+83132: goto 85814
+83134: r8 = scope[5795]
+83137: r9 = Array(2)
+83140: r10 = 2
+83143: r9[0] = r10
+83147: r10 = null
+83150: r9[1] = r10
+83154: r10 = r8["a"]
+83160: r2 = APPLY r10 THIS r8 ARGS r9
+83164: r7 = r2
+83167: return r7
+83169: r8 = null
+83172: r9 = scope[1083]
+83175: r8 = r8 !== r9
+83179: if !r8 goto 83197
+83182: r10 = 0
+83185: r9 = undefined
+83187: r10 = scope[1083]
+83190: r9 = r9 !== r10
+83194: r8 = r9
+83197: if !r8 goto 83212
+83200: r9 = scope[1083]
+83203: r9 = r9["aborted"]
+83209: r8 = r9
+83212: r7 = !r8
+83215: if !r7 goto 83235
+83218: r9 = scope[5795]
+83221: r10 = 4
+83224: r9["n"] = r10
+83230: r8 = r10
+83233: goto 85814
+83235: r7 = window["DOMException"]
+83240: r8 = Array(2)
+83243: r9 = "Aborted"
+83248: r8[0] = r9
+83252: r9 = "AbortError"
+83257: r8[1] = r9
+83261: r7 = CONSTRUCT r7 ARGS r8
+83265: throw r7
+83267: r8 = scope[1764]
+83270: r9 = "Uploading video"
+83275: r7 = r8(r9)
+83279: r8 = scope[5795]
+83282: r9 = 5
+83285: r8["n"] = r9
+83291: r7 = r9
+83294: r8 = scope[1802]
+83297: r9 = Array(4)
+83300: r10 = scope[1041]
+83303: r9[0] = r10
+83307: r10 = scope[5785]
+83310: r9[1] = r10
+83314: r10 = scope[1042]
+83317: r9[2] = r10
+83321: r10 = scope[1083]
+83324: r9[3] = r10
+83328: r10 = scope[1]
+83331: r2 = APPLY r8 THIS r10 ARGS r9
+83335: r7 = r2
+83338: return r7
+83340: r8 = scope[5795]
+83343: r8 = r8["v"]
+83349: scope[1769] = r8
+83352: r7 = r8
+83355: r7 = scope[1769]
+83358: if !r7 goto 83378
+83361: r9 = scope[5795]
+83364: r10 = 6
+83367: r9["n"] = r10
+83373: r8 = r10
+83376: goto 85814
+83378: r8 = scope[5795]
+83381: r9 = Array(2)
+83384: r10 = 2
+83387: r9[0] = r10
+83391: r10 = null
+83394: r9[1] = r10
+83398: r10 = r8["a"]
+83404: r2 = APPLY r10 THIS r8 ARGS r9
+83408: r7 = r2
+83411: return r7
+83413: r8 = null
+83416: r9 = scope[1083]
+83419: r8 = r8 !== r9
+83423: if !r8 goto 83441
+83426: r10 = 0
+83429: r9 = undefined
+83431: r10 = scope[1083]
+83434: r9 = r9 !== r10
+83438: r8 = r9
+83441: if !r8 goto 83456
+83444: r9 = scope[1083]
+83447: r9 = r9["aborted"]
+83453: r8 = r9
+83456: r7 = !r8
+83459: if !r7 goto 83496
+83462: r8 = "t"
+83467: r9 = "t"
+83472: r8 = r8 === r9
+83476: if !r8 goto 83496
+83479: r10 = scope[5795]
+83482: r11 = 7
+83485: r10["n"] = r11
+83491: r9 = r11
+83494: goto 85814
+83496: r7 = window["DOMException"]
+83501: r8 = Array(2)
+83504: r9 = "Aborted"
+83509: r8[0] = r9
+83513: r9 = "AbortError"
+83518: r8[1] = r9
+83522: r7 = CONSTRUCT r7 ARGS r8
+83526: throw r7
+83528: r8 = scope[1764]
+83531: r9 = "Polling video thumbnails"
+83536: r7 = r8(r9)
+83540: r8 = scope[5795]
+83543: r9 = 8
+83546: r8["n"] = r9
+83552: r7 = r9
+83555: r8 = scope[1816]
+83558: r9 = scope[1769]
+83561: r10 = scope[1042]
+83564: r11 = scope[1083]
+83567: r7 = r8(r9, r10, r11)
+83573: return r7
+83575: r8 = scope[5795]
+83578: r8 = r8["v"]
+83584: scope[5786] = r8
+83587: r7 = r8
+83590: r8 = null
+83593: r9 = scope[5786]
+83596: r8 = r8 === r9
+83600: if r8 goto 83618
+83603: r10 = 0
+83606: r9 = undefined
+83608: r10 = scope[5786]
+83611: r9 = r9 === r10
+83615: r8 = r9
+83618: if r8 goto 83647
+83621: r9 = null
+83624: r11 = scope[5786]
+83627: r12 = 0
+83630: r11 = r11[r12]
+83634: scope[5784] = r11
+83637: r10 = r11
+83640: r9 = r9 === r10
+83644: r8 = r9
+83647: if r8 goto 83665
+83650: r10 = 0
+83653: r9 = undefined
+83655: r10 = scope[5784]
+83658: r9 = r9 === r10
+83662: r8 = r9
+83665: if !r8 goto 83678
+83668: r10 = 0
+83671: r9 = undefined
+83673: r8 = r9
+83676: goto 83690
+83678: r10 = scope[5784]
+83681: r10 = r10["uri"]
+83687: r8 = r10
+83690: if r8 goto 83699
+83693: r9 = null
+83696: r8 = r9
+83699: scope[1771] = r8
+83702: r7 = r8
+83705: r8 = scope[5795]
+83708: r9 = 13
+83711: r8["n"] = r9
+83717: r7 = r9
+83720: goto 85814
+83722: r7 = scope[1703]
+83725: if !r7 goto 83745
+83728: r9 = scope[5795]
+83731: r10 = 10
+83734: r9["n"] = r10
+83740: r8 = r10
+83743: goto 85814
+83745: r8 = scope[5795]
+83748: r9 = Array(2)
+83751: r10 = 2
+83754: r9[0] = r10
+83758: r10 = null
+83761: r9[1] = r10
+83765: r10 = r8["a"]
+83771: r2 = APPLY r10 THIS r8 ARGS r9
+83775: r7 = r2
+83778: return r7
+83780: r8 = scope[1764]
+83783: r9 = "Uploading image"
+83788: r7 = r8(r9)
+83792: r8 = scope[5795]
+83795: r9 = 11
+83798: r8["n"] = r9
+83804: r7 = r9
+83807: r8 = scope[1836]
+83810: r9 = scope[1041]
+83813: r10 = scope[1703]
+83816: r11 = scope[1042]
+83819: r7 = r8(r9, r10, r11)
+83825: return r7
+83827: r8 = scope[5795]
+83830: r8 = r8["v"]
+83836: scope[5787] = r8
+83839: r7 = r8
+83842: r7 = null
+83845: r8 = scope[5787]
+83848: r7 = r7 !== r8
+83852: if !r7 goto 83870
+83855: r9 = 0
+83858: r8 = undefined
+83860: r9 = scope[5787]
+83863: r8 = r8 !== r9
+83867: r7 = r8
+83870: if !r7 goto 83885
+83873: r8 = scope[5787]
+83876: r8 = r8["url"]
+83882: r7 = r8
+83885: if !r7 goto 83905
+83888: r9 = scope[5795]
+83891: r10 = 12
+83894: r9["n"] = r10
+83900: r8 = r10
+83903: goto 85814
+83905: r8 = scope[5795]
+83908: r9 = Array(2)
+83911: r10 = 2
+83914: r9[0] = r10
+83918: r11 = scope[1840]
+83921: r12 = {}
+83923: r13 = scope[1040]
+83926: r12["pageId"] = r13
+83932: r13 = scope[1081]
+83935: r12["dtsg"] = r13
+83941: r13 = scope[1078]
+83944: r12["userId"] = r13
+83950: r13 = scope[1042]
+83953: r12["adsToken"] = r13
+83959: r13 = scope[1083]
+83962: r12["signal"] = r13
+83968: r13 = scope[1703]
+83971: r12["imageUrl"] = r13
+83977: r13 = scope[1077]
+83980: r12["title"] = r13
+83986: r13 = scope[1262]
+83989: r12["description"] = r13
+83995: r13 = scope[1263]
+83998: r12["linkUrl"] = r13
+84004: r13 = scope[1757]
+84007: r12["ctaType"] = r13
+84013: r10 = r11(r12)
+84017: r9[1] = r10
+84021: r10 = r8["a"]
+84027: r2 = APPLY r10 THIS r8 ARGS r9
+84031: r7 = r2
+84034: return r7
+84036: r8 = scope[5787]
+84039: r8 = r8["url"]
+84045: scope[1773] = r8
+84048: r7 = r8
+84051: r8 = scope[1764]
+84054: r9 = "Creating ad creative"
+84059: r7 = r8(r9)
+84063: r8 = scope[1766]
+84066: if !r8 goto 84095
+84069: r9 = scope[1758]
+84072: if r9 goto 84081
+84075: r10 = scope[1082]
+84078: r9 = r10
+84081: if r9 goto 84090
+84084: r10 = scope[1077]
+84087: r9 = r10
+84090: r8 = r9
+84093: goto 84119
+84095: r10 = scope[1082]
+84098: if r10 goto 84107
+84101: r11 = scope[1758]
+84104: r10 = r11
+84107: if r10 goto 84116
+84110: r11 = scope[1077]
+84113: r10 = r11
+84116: r8 = r10
+84119: scope[1775] = r8
+84122: r7 = r8
+84125: r8 = {}
+84127: r9 = scope[1263]
+84130: r8["link"] = r9
+84136: r9 = scope[1775]
+84139: r8["message"] = r9
+84145: r9 = scope[1077]
+84148: r8["name"] = r9
+84154: r9 = scope[1262]
+84157: r8["description"] = r9
+84163: r10 = 0
+84166: r9 = !r10
+84169: r8["multi_share_optimized"] = r9
+84175: r10 = 0
+84178: r9 = !r10
+84181: r8["multi_share_end_card"] = r9
+84187: scope[1776] = r8
+84190: r7 = r8
+84193: r7 = scope[1769]
+84196: if !r7 goto 84243
+84199: r9 = scope[1776]
+84202: r10 = scope[1769]
+84205: r9["video_id"] = r10
+84211: r8 = r10
+84214: r8 = scope[1771]
+84217: if !r8 goto 84238
+84220: r10 = scope[1776]
+84223: r11 = scope[1771]
+84226: r10["picture"] = r11
+84232: r9 = r11
+84235: r8 = r9
+84238: r7 = r8
+84241: goto 84270
+84243: r9 = scope[1773]
+84246: if !r9 goto 84267
+84249: r11 = scope[1776]
+84252: r12 = scope[1773]
+84255: r11["picture"] = r12
+84261: r10 = r12
+84264: r9 = r10
+84267: r7 = r9
+84270: r7 = scope[1767]
+84273: if !r7 goto 84294
+84276: r9 = scope[1776]
+84279: r10 = scope[1767]
+84282: r9["caption"] = r10
+84288: r8 = r10
+84291: r7 = r8
+84294: r7 = scope[1765]
+84297: if r7 goto 84516
+84300: r9 = scope[1776]
+84303: r10 = {}
+84305: r11 = scope[1757]
+84308: r10["type"] = r11
+84314: r11 = "LIKE_PAGE"
+84319: r12 = scope[1757]
+84322: r11 = r11 === r12
+84326: if !r11 goto 84345
+84329: r12 = {}
+84331: r13 = scope[1040]
+84334: r12["page"] = r13
+84340: r11 = r12
+84343: goto 84498
+84345: r13 = "JOIN_GROUP"
+84350: r14 = scope[1757]
+84353: r13 = r13 === r14
+84357: if !r13 goto 84481
+84360: r14 = {}
+84362: r15 = null
+84365: r18 = scope[1263]
+84368: r19 = Array(1)
+84371: r20 = RegExp("groups\\/(\\d+)", "")
+84379: r19[0] = r20
+84383: r20 = r18["match"]
+84389: r2 = APPLY r20 THIS r18 ARGS r19
+84393: r17 = r2
+84396: scope[5782] = r17
+84399: r16 = r17
+84402: r15 = r15 === r16
+84406: if r15 goto 84424
+84409: r17 = 0
+84412: r16 = undefined
+84414: r17 = scope[5782]
+84417: r16 = r16 === r17
+84421: r15 = r16
+84424: if !r15 goto 84437
+84427: r17 = 0
+84430: r16 = undefined
+84432: r15 = r16
+84435: goto 84450
+84437: r17 = scope[5782]
+84440: r18 = 1
+84443: r17 = r17[r18]
+84447: r15 = r17
+84450: if r15 goto 84461
+84453: r16 = ""
+84458: r15 = r16
+84461: r14["group_id"] = r15
+84467: r15 = scope[1263]
+84470: r14["link"] = r15
+84476: r13 = r14
+84479: goto 84495
+84481: r15 = {}
+84483: r16 = scope[1263]
+84486: r15["link"] = r16
+84492: r13 = r15
+84495: r11 = r13
+84498: r10["value"] = r11
+84504: r9["call_to_action"] = r10
+84510: r8 = r10
+84513: r7 = r8
+84516: r8 = scope[5795]
+84519: r9 = 14
+84522: r8["n"] = r9
+84528: r7 = r9
+84531: r8 = window["fetch"]
+84536: r11 = "https://graph.facebook.com/v21.0/act_"
+84541: r12 = Array(2)
+84544: r13 = scope[1041]
+84547: r12[0] = r13
+84551: r13 = "/adcreatives?access_token="
+84556: r12[1] = r13
+84560: r13 = r11["concat"]
+84566: r2 = APPLY r13 THIS r11 ARGS r12
+84570: r10 = r2
+84573: r11 = Array(2)
+84576: r12 = scope[1042]
+84579: r11[0] = r12
+84583: r12 = "&fields=effective_object_story_id&fewfeedcors=0"
+84588: r11[1] = r12
+84592: r12 = r10["concat"]
+84598: r2 = APPLY r12 THIS r10 ARGS r11
+84602: r9 = r2
+84605: r10 = {}
+84607: r11 = "POST"
+84612: r10["method"] = r11
+84618: r11 = {}
+84620: r12 = "application/json"
+84625: r11["Content-Type"] = r12
+84631: r10["headers"] = r11
+84637: r12 = window["JSON"]
+84642: r13 = Array(1)
+84645: r14 = {}
+84647: r15 = {}
+84649: r16 = scope[1040]
+84652: r15["page_id"] = r16
+84658: r16 = scope[1776]
+84661: r15["link_data"] = r16
+84667: r14["object_story_spec"] = r15
+84673: r13[0] = r14
+84677: r14 = r12["stringify"]
+84683: r2 = APPLY r14 THIS r12 ARGS r13
+84687: r11 = r2
+84690: r10["body"] = r11
+84696: r11 = scope[1083]
+84699: r10["signal"] = r11
+84705: r7 = r8(r9, r10)
+84710: return r7
+84712: r8 = scope[5795]
+84715: r8 = r8["v"]
+84721: scope[1778] = r8
+84724: r7 = r8
+84727: r8 = scope[5795]
+84730: r9 = 15
+84733: r8["n"] = r9
+84739: r7 = r9
+84742: r8 = scope[1778]
+84745: r9 = []
+84747: r10 = r8["json"]
+84753: r2 = APPLY r10 THIS r8 ARGS r9
+84757: r7 = r2
+84760: return r7
+84762: r8 = scope[5795]
+84765: r8 = r8["v"]
+84771: scope[1779] = r8
+84774: r7 = r8
+84777: r8 = null
+84780: r9 = scope[1779]
+84783: r8 = r8 === r9
+84787: if r8 goto 84805
+84790: r10 = 0
+84793: r9 = undefined
+84795: r10 = scope[1779]
+84798: r9 = r9 === r10
+84802: r8 = r9
+84805: if !r8 goto 84818
+84808: r10 = 0
+84811: r9 = undefined
+84813: r8 = r9
+84816: goto 84830
+84818: r10 = scope[1779]
+84821: r10 = r10["id"]
+84827: r8 = r10
+84830: scope[1780] = r8
+84833: r7 = r8
+84836: r7 = scope[1780]
+84839: if !r7 goto 84876
+84842: r8 = "t"
+84847: r9 = "t"
+84852: r8 = r8 === r9
+84856: if !r8 goto 84876
+84859: r10 = scope[5795]
+84862: r11 = 16
+84865: r10["n"] = r11
+84871: r9 = r11
+84874: goto 85814
+84876: r8 = scope[5795]
+84879: r9 = Array(2)
+84882: r10 = 2
+84885: r9[0] = r10
+84889: r10 = null
+84892: r9[1] = r10
+84896: r10 = r8["a"]
+84902: r2 = APPLY r10 THIS r8 ARGS r9
+84906: r7 = r2
+84909: return r7
+84911: r8 = scope[1764]
+84914: r9 = "Waiting for story ID"
+84919: r7 = r8(r9)
+84923: r8 = null
+84926: scope[1781] = r8
+84929: r7 = r8
+84932: r8 = 0
+84935: scope[5788] = r8
+84938: r7 = r8
+84941: r8 = 15
+84944: r9 = scope[5788]
+84947: r8 = r8 > r9
+84951: r7 = !r8
+84954: if !r7 goto 84974
+84957: r9 = scope[5795]
+84960: r10 = 23
+84963: r9["n"] = r10
+84969: r8 = r10
+84972: goto 85814
+84974: r8 = null
+84977: r9 = scope[1083]
+84980: r8 = r8 !== r9
+84984: if !r8 goto 85002
+84987: r10 = 0
+84990: r9 = undefined
+84992: r10 = scope[1083]
+84995: r9 = r9 !== r10
+84999: r8 = r9
+85002: if !r8 goto 85017
+85005: r9 = scope[1083]
+85008: r9 = r9["aborted"]
+85014: r8 = r9
+85017: r7 = !r8
+85020: if !r7 goto 85040
+85023: r9 = scope[5795]
+85026: r10 = 18
+85029: r9["n"] = r10
+85035: r8 = r10
+85038: goto 85814
+85040: r7 = window["DOMException"]
+85045: r8 = Array(2)
+85048: r9 = "Aborted"
+85053: r8[0] = r9
+85057: r9 = "AbortError"
+85062: r8[1] = r9
+85066: r7 = CONSTRUCT r7 ARGS r8
+85070: throw r7
+85072: r8 = scope[5795]
+85075: r9 = 19
+85078: r8["n"] = r9
+85084: r7 = r9
+85087: r8 = window["fetch"]
+85092: r11 = "https://graph.facebook.com/v21.0/"
+85097: r12 = Array(2)
+85100: r13 = scope[1780]
+85103: r12[0] = r13
+85107: r13 = "?fields=effective_object_story_id&access_token="
+85112: r12[1] = r13
+85116: r13 = r11["concat"]
+85122: r2 = APPLY r13 THIS r11 ARGS r12
+85126: r10 = r2
+85129: r11 = Array(2)
+85132: r12 = scope[1042]
+85135: r11[0] = r12
+85139: r12 = "&fewfeedcors=0"
+85144: r11[1] = r12
+85148: r12 = r10["concat"]
+85154: r2 = APPLY r12 THIS r10 ARGS r11
+85158: r9 = r2
+85161: r10 = {}
+85163: r11 = scope[1083]
+85166: r10["signal"] = r11
+85172: r7 = r8(r9, r10)
+85177: return r7
+85179: r8 = scope[5795]
+85182: r8 = r8["v"]
+85188: scope[5789] = r8
+85191: r7 = r8
+85194: r8 = scope[5795]
+85197: r9 = 20
+85200: r8["n"] = r9
+85206: r7 = r9
+85209: r8 = scope[5789]
+85212: r9 = []
+85214: r10 = r8["json"]
+85220: r2 = APPLY r10 THIS r8 ARGS r9
+85224: r7 = r2
+85227: return r7
+85229: r8 = scope[5795]
+85232: r8 = r8["v"]
+85238: scope[5790] = r8
+85241: r7 = r8
+85244: r8 = null
+85247: r9 = scope[5790]
+85250: r8 = r8 !== r9
+85254: if !r8 goto 85272
+85257: r10 = 0
+85260: r9 = undefined
+85262: r10 = scope[5790]
+85265: r9 = r9 !== r10
+85269: r8 = r9
+85272: if !r8 goto 85287
+85275: r9 = scope[5790]
+85278: r9 = r9["effective_object_story_id"]
+85284: r8 = r9
+85287: r7 = !r8
+85290: if !r7 goto 85310
+85293: r9 = scope[5795]
+85296: r10 = 21
+85299: r9["n"] = r10
+85305: r8 = r10
+85308: goto 85814
+85310: r8 = scope[5790]
+85313: r8 = r8["effective_object_story_id"]
+85319: scope[1781] = r8
+85322: r7 = r8
+85325: r8 = scope[5795]
+85328: r9 = Array(2)
+85331: r10 = 3
+85334: r9[0] = r10
+85338: r10 = 23
+85341: r9[1] = r10
+85345: r10 = r8["a"]
+85351: r2 = APPLY r10 THIS r8 ARGS r9
+85355: r7 = r2
+85358: return r7
+85360: r8 = scope[5795]
+85363: r9 = 22
+85366: r8["n"] = r9
+85372: r7 = r9
+85375: r7 = Promise
+85377: r8 = Array(1)
+85380: r9 = function@85923(arity=2, name="")
+85387: r8[0] = r9
+85391: r7 = CONSTRUCT r7 ARGS r8
+85395: return r7
+85397: r8 = scope[5788]
+85400: r7 = r8 + 1
+85404: scope[5788] = r7
+85407: r7 = r7 - 1
+85411: r8 = scope[5795]
+85414: r9 = 17
+85417: r8["n"] = r9
+85423: r7 = r9
+85426: goto 85814
+85428: r7 = scope[1781]
+85431: if !r7 goto 85451
+85434: r9 = scope[5795]
+85437: r10 = 24
+85440: r9["n"] = r10
+85446: r8 = r10
+85449: goto 85814
+85451: r8 = scope[5795]
+85454: r9 = Array(2)
+85457: r10 = 2
+85460: r9[0] = r10
+85464: r10 = null
+85467: r9[1] = r10
+85471: r10 = r8["a"]
+85477: r2 = APPLY r10 THIS r8 ARGS r9
+85481: r7 = r2
+85484: return r7
+85486: r8 = scope[1759]
+85489: if r8 goto 85498
+85492: r9 = scope[1760]
+85495: r8 = r9
+85498: r7 = !r8
+85501: if !r7 goto 85521
+85504: r9 = scope[5795]
+85507: r10 = 26
+85510: r9["n"] = r10
+85516: r8 = r10
+85519: goto 85814
+85521: r8 = scope[1764]
+85524: r9 = "Scheduling"
+85529: r7 = r8(r9)
+85533: r8 = scope[1759]
+85536: if r8 goto 85585
+85539: r9 = window["Date"]
+85544: r10 = Array(1)
+85547: r12 = window["Date"]
+85552: r13 = []
+85554: r14 = r12["now"]
+85560: r2 = APPLY r14 THIS r12 ARGS r13
+85564: r11 = r2
+85567: r12 = 86400000
+85570: r11 = r11 + r12
+85574: r10[0] = r11
+85578: r9 = CONSTRUCT r9 ARGS r10
+85582: r8 = r9
+85585: scope[5791] = r8
+85588: r7 = r8
+85591: r8 = scope[5795]
+85594: r9 = 25
+85597: r8["n"] = r9
+85603: r7 = r9
+85606: r8 = scope[1824]
+85609: r9 = Array(6)
+85612: r10 = scope[1781]
+85615: r9[0] = r10
+85619: r10 = scope[1040]
+85622: r9[1] = r10
+85626: r10 = scope[5791]
+85629: r9[2] = r10
+85633: r10 = scope[1081]
+85636: r9[3] = r10
+85640: r10 = scope[1078]
+85643: r9[4] = r10
+85647: r10 = scope[1083]
+85650: r9[5] = r10
+85654: r10 = scope[1]
+85657: r2 = APPLY r8 THIS r10 ARGS r9
+85661: r7 = r2
+85664: return r7
+85666: r8 = scope[5795]
+85669: r9 = 27
+85672: r8["n"] = r9
+85678: r7 = r9
+85681: goto 85814
+85683: r8 = scope[1764]
+85686: r9 = "Publishing"
+85691: r7 = r8(r9)
+85695: r8 = scope[5795]
+85698: r9 = 27
+85701: r8["n"] = r9
+85707: r7 = r9
+85710: r8 = scope[1808]
+85713: r9 = Array(7)
+85716: r10 = scope[1781]
+85719: r9[0] = r10
+85723: r10 = scope[1040]
+85726: r9[1] = r10
+85730: r10 = scope[1081]
+85733: r9[2] = r10
+85737: r10 = scope[1078]
+85740: r9[3] = r10
+85744: r10 = scope[1083]
+85747: r9[4] = r10
+85751: r10 = scope[1761]
+85754: r9[5] = r10
+85758: r10 = scope[1264]
+85761: r9[6] = r10
+85765: r10 = scope[1]
+85768: r2 = APPLY r8 THIS r10 ARGS r9
+85772: r7 = r2
+85775: return r7
+85777: r8 = scope[5795]
+85780: r9 = Array(2)
+85783: r10 = 2
+85786: r9[0] = r10
+85790: r10 = scope[1781]
+85793: r9[1] = r10
+85797: r10 = r8["a"]
+85803: r2 = APPLY r10 THIS r8 ARGS r9
+85807: r7 = r2
+85810: return r7
+85812: goto 82049
+85814: return undefined
+85815: local[1040] = r4
+85818: r6 = scope[348]
+85821: local[1764] = r6
+85824: r7 = "t"
+85829: r8 = "k"
+85834: r7 = r7 === r8
+85838: r6 = !r7
+85841: if !r6 goto 85922
+85844: r8 = "t"
+85849: r9 = "q"
+85854: r8 = r8 === r9
+85858: r7 = !r8
+85861: if !r7 goto 85922
+85864: catch_target 85912
+85866: r8 = null
+85869: r9 = scope[1762]
+85872: r8 = r8 === r9
+85876: if r8 goto 85894
+85879: r10 = 0
+85882: r9 = undefined
+85884: r10 = scope[1762]
+85887: r9 = r9 === r10
+85891: r8 = r9
+85894: if r8 goto 85910
+85897: r10 = scope[1762]
+85900: r11 = scope[1040]
+85903: r9 = r10(r11)
+85907: r8 = r9
+85910: goto 85920
+85912: catch_target null
+85914: r8 = exception
+85916: clear_exception
+85917: local[6065] = r8
+85920: catch_target null
+85922: return undefined
+85923: local[1040] = r4
+85926: local[1041] = r5
+85929: local[1081] = undefined
+85931: r8 = window["setTimeout"]
+85936: r9 = scope[1040]
+85939: r10 = 4000
+85942: r7 = r8(r9, r10)
+85947: scope[1081] = r7
+85950: r7 = null
+85953: r8 = scope[1083]
+85956: r7 = r7 === r8
+85960: if r7 goto 85978
+85963: r9 = 0
+85966: r8 = undefined
+85968: r9 = scope[1083]
+85971: r8 = r8 === r9
+85975: r7 = r8
+85978: if r7 goto 86041
+85981: r9 = scope[1083]
+85984: r10 = Array(3)
+85987: r11 = "abort"
+85992: r10[0] = r11
+85996: r11 = function@86042(arity=0, name="")
+86003: r10[1] = r11
+86007: r11 = {}
+86009: r13 = 0
+86012: r12 = !r13
+86015: r11["once"] = r12
+86021: r10[2] = r11
+86025: r11 = r9["addEventListener"]
+86031: r2 = APPLY r11 THIS r9 ARGS r10
+86035: r8 = r2
+86038: r7 = r8
+86041: return undefined
+86042: r6 = window["clearTimeout"]
+86047: r7 = scope[1081]
+86050: r5 = r6(r7)
+86054: r6 = scope[1041]
+86057: r7 = window["DOMException"]
+86062: r8 = Array(2)
+86065: r9 = "Aborted"
+86070: r8[0] = r9
+86074: r9 = "AbortError"
+86079: r8[1] = r9
+86083: r7 = CONSTRUCT r7 ARGS r8
+86087: r5 = r6(r7)
+86091: return undefined
+
+=== publish helper; PC [59495,61766) ===
+59495: local[4590] = r4
+59498: local[4591] = r5
+59501: local[4592] = r6
+59504: local[4593] = r7
+59507: local[4594] = r8
+59510: local[4595] = r9
+59513: local[4596] = r10
+59516: r13 = scope[1809]
+59519: r14 = Array(2)
+59522: r15 = this
+59524: r14[0] = r15
+59528: r15 = r3
+59531: r14[1] = r15
+59535: r15 = r13["apply"]
+59541: r2 = APPLY r15 THIS r13 ARGS r14
+59545: r12 = r2
+59548: return r12
+59550: return undefined
+59551: r7 = scope[999]
+59554: r10 = scope[980]
+59557: r9 = r10()
+59560: r10 = Array(1)
+59563: r11 = function@59635(arity=7, name="")
+59570: local[250] = r11
+59573: r10[0] = r11
+59577: r11 = r9["m"]
+59583: r2 = APPLY r11 THIS r9 ARGS r10
+59587: r8 = r2
+59590: r6 = r7(r8)
+59594: scope[1809] = r6
+59597: r5 = r6
+59600: r6 = scope[1809]
+59603: r7 = Array(2)
+59606: r8 = this
+59608: r7[0] = r8
+59612: r8 = r3
+59615: r7[1] = r8
+59619: r8 = r6["apply"]
+59625: r2 = APPLY r8 THIS r6 ARGS r7
+59629: r5 = r2
+59632: return r5
+59634: return undefined
+59635: local[1040] = r4
+59638: local[1041] = r5
+59641: local[1081] = r6
+59644: local[1078] = r7
+59647: local[1042] = r8
+59650: local[1083] = r9
+59653: local[1703] = r10
+59656: r12 = scope[250]
+59659: local[4602] = r12
+59662: local[4603] = undefined
+59664: local[4604] = undefined
+59666: local[4605] = undefined
+59668: local[4606] = undefined
+59670: local[1228] = undefined
+59672: local[1077] = undefined
+59674: local[1262] = undefined
+59676: local[1263] = undefined
+59678: local[4607] = undefined
+59680: local[4608] = undefined
+59682: local[4609] = undefined
+59684: local[4610] = undefined
+59686: local[4611] = undefined
+59688: r14 = scope[980]
+59691: r13 = r14()
+59694: r14 = Array(4)
+59697: r15 = function@59787(arity=1, name="")
+59704: r14[0] = r15
+59708: r15 = scope[4602]
+59711: r14[1] = r15
+59715: r15 = null
+59718: r14[2] = r15
+59722: r15 = Array(2)
+59725: r16 = Array(2)
+59728: r17 = 9
+59731: r16[0] = r17
+59735: r17 = 10
+59738: r16[1] = r17
+59742: r15[0] = r16
+59746: r16 = Array(2)
+59749: r17 = 1
+59752: r16[0] = r17
+59756: r17 = 5
+59759: r16[1] = r17
+59763: r15[1] = r16
+59767: r14[3] = r15
+59771: r15 = r13["w"]
+59777: r2 = APPLY r15 THIS r13 ARGS r14
+59781: r12 = r2
+59784: return r12
+59786: return undefined
+59787: local[4615] = r4
+59790: r7 = "t"
+59795: r8 = "w"
+59800: r7 = r7 === r8
+59804: r6 = !r7
+59807: if !r6 goto 61765
+59810: r7 = 1
+59813: if !r7 goto 61765
+59816: r7 = scope[4615]
+59819: r7 = r7["n"]
+59825: r8 = 0
+59828: r9 = r8 === r7
+59832: if r9 goto 59915
+59835: r8 = 2
+59838: r9 = r8 === r7
+59842: if r9 goto 60207
+59845: r8 = 3
+59848: r9 = r8 === r7
+59852: if r9 goto 60257
+59855: r8 = 4
+59858: r9 = r8 === r7
+59862: if r9 goto 60399
+59865: r8 = 5
+59868: r9 = r8 === r7
+59872: if r9 goto 60416
+59875: r8 = 6
+59878: r9 = r8 === r7
+59882: if r9 goto 60446
+59885: r8 = 7
+59888: r9 = r8 === r7
+59892: if r9 goto 61272
+59895: r8 = 8
+59898: r9 = r8 === r7
+59902: if r9 goto 61322
+59905: r8 = 10
+59908: r9 = r8 === r7
+59912: if r9 goto 61670
+59915: r9 = scope[1083]
+59918: r8 = !r9
+59921: if !r8 goto 59958
+59924: r9 = "t"
+59929: r10 = "t"
+59934: r9 = r9 === r10
+59938: if !r9 goto 59958
+59941: r11 = scope[4615]
+59944: r12 = 6
+59947: r11["n"] = r12
+59953: r10 = r12
+59956: goto 61765
+59958: r9 = scope[4615]
+59961: r10 = 1
+59964: r9["p"] = r10
+59970: r8 = r10
+59973: r9 = scope[1703]
+59976: if !r9 goto 59989
+59979: r10 = "&timeline_visibility=hidden"
+59984: r9 = r10
+59987: goto 59997
+59989: r11 = ""
+59994: r9 = r11
+59997: scope[4603] = r9
+60000: r8 = r9
+60003: r9 = window["FormData"]
+60008: r10 = []
+60010: r9 = CONSTRUCT r9 ARGS r10
+60014: scope[4604] = r9
+60017: r8 = r9
+60020: r9 = scope[4604]
+60023: r10 = Array(2)
+60026: r11 = "is_published"
+60031: r10[0] = r11
+60035: r11 = "true"
+60040: r10[1] = r11
+60044: r11 = r9["append"]
+60050: r2 = APPLY r11 THIS r9 ARGS r10
+60054: r8 = r2
+60057: r9 = scope[4615]
+60060: r10 = 2
+60063: r9["n"] = r10
+60069: r8 = r10
+60072: r9 = window["fetch"]
+60077: r13 = "https://graph.facebook.com/v21.0/"
+60082: r14 = Array(2)
+60085: r15 = scope[1040]
+60088: r14[0] = r15
+60092: r15 = "?access_token="
+60097: r14[1] = r15
+60101: r15 = r13["concat"]
+60107: r2 = APPLY r15 THIS r13 ARGS r14
+60111: r12 = r2
+60114: r13 = Array(2)
+60117: r14 = scope[1083]
+60120: r13[0] = r14
+60124: r14 = "&fewfeedcors=0"
+60129: r13[1] = r14
+60133: r14 = r12["concat"]
+60139: r2 = APPLY r14 THIS r12 ARGS r13
+60143: r11 = r2
+60146: r12 = Array(1)
+60149: r13 = scope[4603]
+60152: r12[0] = r13
+60156: r13 = r11["concat"]
+60162: r2 = APPLY r13 THIS r11 ARGS r12
+60166: r10 = r2
+60169: r11 = {}
+60171: r12 = "POST"
+60176: r11["method"] = r12
+60182: r12 = scope[4604]
+60185: r11["body"] = r12
+60191: r12 = scope[1042]
+60194: r11["signal"] = r12
+60200: r8 = r9(r10, r11)
+60205: return r8
+60207: r9 = scope[4615]
+60210: r9 = r9["v"]
+60216: scope[4605] = r9
+60219: r8 = r9
+60222: r9 = scope[4615]
+60225: r10 = 3
+60228: r9["n"] = r10
+60234: r8 = r10
+60237: r9 = scope[4605]
+60240: r10 = []
+60242: r11 = r9["json"]
+60248: r2 = APPLY r11 THIS r9 ARGS r10
+60252: r8 = r2
+60255: return r8
+60257: r9 = scope[4615]
+60260: r9 = r9["v"]
+60266: scope[4606] = r9
+60269: r8 = r9
+60272: r9 = scope[4606]
+60275: if !r9 goto 60293
+60278: r11 = scope[4606]
+60281: r11 = r11["error"]
+60287: r10 = !r11
+60290: r9 = r10
+60293: if !r9 goto 60338
+60296: r10 = scope[4606]
+60299: r10 = r10["success"]
+60305: if r10 goto 60320
+60308: r11 = scope[4606]
+60311: r11 = r11["id"]
+60317: r10 = r11
+60320: if r10 goto 60335
+60323: r11 = scope[4606]
+60326: r11 = r11["post_id"]
+60332: r10 = r11
+60335: r9 = r10
+60338: r8 = !r9
+60341: if !r8 goto 60361
+60344: r10 = scope[4615]
+60347: r11 = 4
+60350: r10["n"] = r11
+60356: r9 = r11
+60359: goto 61765
+60361: r9 = scope[4615]
+60364: r10 = Array(2)
+60367: r11 = 2
+60370: r10[0] = r11
+60374: r12 = 0
+60377: r11 = !r12
+60380: r10[1] = r11
+60384: r11 = r9["a"]
+60390: r2 = APPLY r11 THIS r9 ARGS r10
+60394: r8 = r2
+60397: return r8
+60399: r9 = scope[4615]
+60402: r10 = 6
+60405: r9["n"] = r10
+60411: r8 = r10
+60414: goto 61765
+60416: r9 = scope[4615]
+60419: r10 = 5
+60422: r9["p"] = r10
+60428: r8 = r10
+60431: r9 = scope[4615]
+60434: r9 = r9["v"]
+60440: scope[4610] = r9
+60443: r8 = r9
+60446: r10 = "S:_I"
+60451: r11 = Array(1)
+60454: r13 = scope[1040]
+60457: r14 = Array(2)
+60460: r15 = "_"
+60465: r14[0] = r15
+60469: r15 = ":"
+60474: r14[1] = r15
+60478: r15 = r13["replace"]
+60484: r2 = APPLY r15 THIS r13 ARGS r14
+60488: r12 = r2
+60491: r11[0] = r12
+60495: r12 = r10["concat"]
+60501: r2 = APPLY r12 THIS r10 ARGS r11
+60505: r9 = r2
+60508: scope[1228] = r9
+60511: r8 = r9
+60514: r9 = window["FormData"]
+60519: r10 = []
+60521: r9 = CONSTRUCT r9 ARGS r10
+60525: scope[1077] = r9
+60528: r8 = r9
+60531: r9 = scope[1077]
+60534: r10 = Array(2)
+60537: r11 = "av"
+60542: r10[0] = r11
+60546: r11 = scope[1041]
+60549: r10[1] = r11
+60553: r11 = r9["append"]
+60559: r2 = APPLY r11 THIS r9 ARGS r10
+60563: r8 = r2
+60566: r9 = scope[1077]
+60569: r10 = Array(2)
+60572: r11 = "fb_dtsg"
+60577: r10[0] = r11
+60581: r11 = scope[1081]
+60584: r10[1] = r11
+60588: r11 = r9["append"]
+60594: r2 = APPLY r11 THIS r9 ARGS r10
+60598: r8 = r2
+60601: r9 = scope[1077]
+60604: r10 = Array(2)
+60607: r11 = "__aaid"
+60612: r10[0] = r11
+60616: r11 = "0"
+60621: r10[1] = r11
+60625: r11 = r9["append"]
+60631: r2 = APPLY r11 THIS r9 ARGS r10
+60635: r8 = r2
+60638: r9 = scope[1077]
+60641: r10 = Array(2)
+60644: r11 = "__user"
+60649: r10[0] = r11
+60653: r11 = scope[1078]
+60656: r10[1] = r11
+60660: r11 = r9["append"]
+60666: r2 = APPLY r11 THIS r9 ARGS r10
+60670: r8 = r2
+60673: r9 = scope[1077]
+60676: r10 = Array(2)
+60679: r11 = "__a"
+60684: r10[0] = r11
+60688: r11 = "1"
+60693: r10[1] = r11
+60697: r11 = r9["append"]
+60703: r2 = APPLY r11 THIS r9 ARGS r10
+60707: r8 = r2
+60710: r9 = scope[1077]
+60713: r10 = Array(2)
+60716: r11 = "__req"
+60721: r10[0] = r11
+60725: r11 = "o"
+60730: r10[1] = r11
+60734: r11 = r9["append"]
+60740: r2 = APPLY r11 THIS r9 ARGS r10
+60744: r8 = r2
+60747: r9 = scope[1077]
+60750: r10 = Array(2)
+60753: r11 = "dpr"
+60758: r10[0] = r11
+60762: r11 = "1.5"
+60767: r10[1] = r11
+60771: r11 = r9["append"]
+60777: r2 = APPLY r11 THIS r9 ARGS r10
+60781: r8 = r2
+60784: r9 = scope[1077]
+60787: r10 = Array(2)
+60790: r11 = "__comet_req"
+60795: r10[0] = r11
+60799: r11 = "11"
+60804: r10[1] = r11
+60808: r11 = r9["append"]
+60814: r2 = APPLY r11 THIS r9 ARGS r10
+60818: r8 = r2
+60821: r9 = scope[1077]
+60824: r10 = Array(2)
+60827: r11 = "__dyn"
+60832: r10[0] = r11
+60836: r12 = scope[1079]
+60839: r13 = 452
+60842: r11 = r12(r13)
+60846: r10[1] = r11
+60850: r11 = r9["append"]
+60856: r2 = APPLY r11 THIS r9 ARGS r10
+60860: r8 = r2
+60863: r9 = scope[1077]
+60866: r10 = Array(2)
+60869: r11 = "__csr"
+60874: r10[0] = r11
+60878: r11 = ""
+60883: r10[1] = r11
+60887: r11 = r9["append"]
+60893: r2 = APPLY r11 THIS r9 ARGS r10
+60897: r8 = r2
+60900: r9 = scope[1077]
+60903: r10 = Array(2)
+60906: r11 = "fb_api_caller_class"
+60911: r10[0] = r11
+60915: r11 = "RelayModern"
+60920: r10[1] = r11
+60924: r11 = r9["append"]
+60930: r2 = APPLY r11 THIS r9 ARGS r10
+60934: r8 = r2
+60937: r9 = scope[1077]
+60940: r10 = Array(2)
+60943: r11 = "fb_api_req_friendly_name"
+60948: r10[0] = r11
+60952: r11 = "BusinessToolsContentManagementPublishingActionMutation"
+60957: r10[1] = r11
+60961: r11 = r9["append"]
+60967: r2 = APPLY r11 THIS r9 ARGS r10
+60971: r8 = r2
+60974: r9 = scope[1077]
+60977: r10 = Array(2)
+60980: r11 = "variables"
+60985: r10[0] = r11
+60989: r12 = window["JSON"]
+60994: r13 = Array(1)
+60997: r14 = {}
+60999: r15 = {}
+61001: r16 = "3"
+61006: r15["client_mutation_id"] = r16
+61012: r16 = scope[1041]
+61015: r15["actor_id"] = r16
+61021: r16 = Array(1)
+61024: r17 = scope[1228]
+61027: r16[0] = r17
+61031: r15["story_ids"] = r16
+61037: r16 = scope[1041]
+61040: r15["page_id"] = r16
+61046: r17 = 0
+61049: r16 = !r17
+61052: r15["is_published"] = r16
+61058: r14["input"] = r15
+61064: r13[0] = r14
+61068: r14 = r12["stringify"]
+61074: r2 = APPLY r14 THIS r12 ARGS r13
+61078: r11 = r2
+61081: r10[1] = r11
+61085: r11 = r9["append"]
+61091: r2 = APPLY r11 THIS r9 ARGS r10
+61095: r8 = r2
+61098: r9 = scope[1077]
+61101: r10 = Array(2)
+61104: r11 = "server_timestamps"
+61109: r10[0] = r11
+61113: r11 = "true"
+61118: r10[1] = r11
+61122: r11 = r9["append"]
+61128: r2 = APPLY r11 THIS r9 ARGS r10
+61132: r8 = r2
+61135: r9 = scope[1077]
+61138: r10 = Array(2)
+61141: r11 = "doc_id"
+61146: r10[0] = r11
+61150: r11 = "5001941423228398"
+61155: r10[1] = r11
+61159: r11 = r9["append"]
+61165: r2 = APPLY r11 THIS r9 ARGS r10
+61169: r8 = r2
+61172: r9 = scope[1077]
+61175: r10 = Array(2)
+61178: r11 = "__jssesw"
+61183: r10[0] = r11
+61187: r11 = "1"
+61192: r10[1] = r11
+61196: r11 = r9["append"]
+61202: r2 = APPLY r11 THIS r9 ARGS r10
+61206: r8 = r2
+61209: r9 = scope[4615]
+61212: r10 = 7
+61215: r9["n"] = r10
+61221: r8 = r10
+61224: r9 = window["fetch"]
+61229: r10 = "https://www.facebook.com/api/graphql/"
+61234: r11 = {}
+61236: r12 = "POST"
+61241: r11["method"] = r12
+61247: r12 = scope[1077]
+61250: r11["body"] = r12
+61256: r12 = scope[1042]
+61259: r11["signal"] = r12
+61265: r8 = r9(r10, r11)
+61270: return r8
+61272: r9 = scope[4615]
+61275: r9 = r9["v"]
+61281: scope[1262] = r9
+61284: r8 = r9
+61287: r9 = scope[4615]
+61290: r10 = 8
+61293: r9["n"] = r10
+61299: r8 = r10
+61302: r9 = scope[1262]
+61305: r10 = []
+61307: r11 = r9["text"]
+61313: r2 = APPLY r11 THIS r9 ARGS r10
+61317: r8 = r2
+61320: return r8
+61322: r9 = scope[4615]
+61325: r9 = r9["v"]
+61331: scope[1263] = r9
+61334: r8 = r9
+61337: r9 = scope[4615]
+61340: r10 = 9
+61343: r9["p"] = r10
+61349: r8 = r10
+61352: r10 = window["JSON"]
+61357: r11 = Array(1)
+61360: r13 = scope[1263]
+61363: r14 = Array(2)
+61366: r15 = RegExp("\\n\\{\"label[\\S\\s]+", "gm")
+61374: r14[0] = r15
+61378: r15 = ""
+61383: r14[1] = r15
+61387: r15 = r13["replace"]
+61393: r2 = APPLY r15 THIS r13 ARGS r14
+61397: r12 = r2
+61400: r11[0] = r12
+61404: r12 = r10["parse"]
+61410: r2 = APPLY r12 THIS r10 ARGS r11
+61414: r9 = r2
+61417: scope[4608] = r9
+61420: r8 = r9
+61423: r9 = null
+61426: r10 = scope[4608]
+61429: r9 = r9 === r10
+61433: if r9 goto 61451
+61436: r11 = 0
+61439: r10 = undefined
+61441: r11 = scope[4608]
+61444: r10 = r10 === r11
+61448: r9 = r10
+61451: if r9 goto 61479
+61454: r10 = null
+61457: r12 = scope[4608]
+61460: r12 = r12["data"]
+61466: scope[4607] = r12
+61469: r11 = r12
+61472: r10 = r10 === r11
+61476: r9 = r10
+61479: if r9 goto 61497
+61482: r11 = 0
+61485: r10 = undefined
+61487: r11 = scope[4607]
+61490: r10 = r10 === r11
+61494: r9 = r10
+61497: if r9 goto 61525
+61500: r10 = null
+61503: r12 = scope[4607]
+61506: r12 = r12["publishing_action"]
+61512: scope[4607] = r12
+61515: r11 = r12
+61518: r10 = r10 === r11
+61522: r9 = r10
+61525: if r9 goto 61543
+61528: r11 = 0
+61531: r10 = undefined
+61533: r11 = scope[4607]
+61536: r10 = r10 === r11
+61540: r9 = r10
+61543: if !r9 goto 61556
+61546: r11 = 0
+61549: r10 = undefined
+61551: r9 = r10
+61554: goto 61568
+61556: r11 = scope[4607]
+61559: r11 = r11["mutated_story_ids"]
+61565: r9 = r11
+61568: scope[4609] = r9
+61571: r8 = r9
+61574: r9 = scope[4615]
+61577: r10 = Array(2)
+61580: r11 = 2
+61583: r10[0] = r11
+61587: r12 = window["Array"]
+61592: r13 = Array(1)
+61595: r14 = scope[4609]
+61598: r13[0] = r14
+61602: r14 = r12["isArray"]
+61608: r2 = APPLY r14 THIS r12 ARGS r13
+61612: r11 = r2
+61615: if !r11 goto 61639
+61618: r12 = 0
+61621: r13 = scope[4609]
+61624: r13 = r13["length"]
+61630: r12 = r12 < r13
+61634: r11 = r12
+61637: goto 61651
+61639: r15 = scope[4609]
+61642: r14 = !r15
+61645: r13 = !r14
+61648: r11 = r13
+61651: r10[1] = r11
+61655: r11 = r9["a"]
+61661: r2 = APPLY r11 THIS r9 ARGS r10
+61665: r8 = r2
+61668: return r8
+61670: r9 = scope[4615]
+61673: r10 = 10
+61676: r9["p"] = r10
+61682: r8 = r10
+61685: r9 = scope[4615]
+61688: r9 = r9["v"]
+61694: scope[4611] = r9
+61697: r8 = r9
+61700: r9 = scope[4615]
+61703: r10 = Array(2)
+61706: r11 = 2
+61709: r10[0] = r11
+61713: r12 = RegExp("mutated_story_ids", "")
+61721: r13 = Array(1)
+61724: r14 = scope[1263]
+61727: r13[0] = r14
+61731: r14 = r12["test"]
+61737: r2 = APPLY r14 THIS r12 ARGS r13
+61741: r11 = r2
+61744: r10[1] = r11
+61748: r11 = r9["a"]
+61754: r2 = APPLY r11 THIS r9 ARGS r10
+61758: r8 = r2
+61761: return r8
+61763: goto 59810
+61765: return undefined
+
+=== schedule helper; PC [70469,72070) ===
+70469: local[5193] = r4
+70472: local[5194] = r5
+70475: local[5195] = r6
+70478: local[5196] = r7
+70481: local[5197] = r8
+70484: local[5198] = r9
+70487: r12 = scope[1825]
+70490: r13 = Array(2)
+70493: r14 = this
+70495: r13[0] = r14
+70499: r14 = r3
+70502: r13[1] = r14
+70506: r14 = r12["apply"]
+70512: r2 = APPLY r14 THIS r12 ARGS r13
+70516: r11 = r2
+70519: return r11
+70521: return undefined
+70522: r7 = scope[999]
+70525: r10 = scope[980]
+70528: r9 = r10()
+70531: r10 = Array(1)
+70534: r11 = function@70606(arity=6, name="")
+70541: local[293] = r11
+70544: r10[0] = r11
+70548: r11 = r9["m"]
+70554: r2 = APPLY r11 THIS r9 ARGS r10
+70558: r8 = r2
+70561: r6 = r7(r8)
+70565: scope[1825] = r6
+70568: r5 = r6
+70571: r6 = scope[1825]
+70574: r7 = Array(2)
+70577: r8 = this
+70579: r7[0] = r8
+70583: r8 = r3
+70586: r7[1] = r8
+70590: r8 = r6["apply"]
+70596: r2 = APPLY r8 THIS r6 ARGS r7
+70600: r5 = r2
+70603: return r5
+70605: return undefined
+70606: local[1040] = r4
+70609: local[1041] = r5
+70612: local[1081] = r6
+70615: local[1078] = r7
+70618: local[1042] = r8
+70621: local[1083] = r9
+70624: r11 = scope[293]
+70627: local[5204] = r11
+70630: local[1703] = undefined
+70632: local[1228] = undefined
+70634: local[1077] = undefined
+70636: local[1262] = undefined
+70638: local[1263] = undefined
+70640: local[5205] = undefined
+70642: local[5206] = undefined
+70644: local[5207] = undefined
+70646: local[5208] = undefined
+70648: r13 = scope[980]
+70651: r12 = r13()
+70654: r13 = Array(4)
+70657: r14 = function@70726(arity=1, name="")
+70664: r13[0] = r14
+70668: r14 = scope[5204]
+70671: r13[1] = r14
+70675: r14 = null
+70678: r13[2] = r14
+70682: r14 = Array(1)
+70685: r15 = Array(2)
+70688: r16 = 3
+70691: r15[0] = r16
+70695: r16 = 4
+70698: r15[1] = r16
+70702: r14[0] = r15
+70706: r13[3] = r14
+70710: r14 = r12["w"]
+70716: r2 = APPLY r14 THIS r12 ARGS r13
+70720: r11 = r2
+70723: return r11
+70725: return undefined
+70726: local[5212] = r4
+70729: r6 = 1
+70732: if !r6 goto 72069
+70735: r6 = scope[5212]
+70738: r6 = r6["n"]
+70744: r7 = 0
+70747: r8 = r7 === r6
+70751: if r8 goto 70784
+70754: r7 = 1
+70757: r8 = r7 === r6
+70761: if r8 goto 71576
+70764: r7 = 2
+70767: r8 = r7 === r6
+70771: if r8 goto 71626
+70774: r7 = 4
+70777: r8 = r7 === r6
+70781: if r8 goto 71974
+70784: r9 = scope[1865]
+70787: r11 = scope[1081]
+70790: r12 = []
+70792: r13 = r11["getTime"]
+70798: r2 = APPLY r13 THIS r11 ARGS r12
+70802: r10 = r2
+70805: r11 = 1000
+70808: r10 = r10 / r11
+70812: r8 = r9(r10)
+70816: scope[1703] = r8
+70819: r7 = r8
+70822: r9 = "S:_I"
+70827: r10 = Array(1)
+70830: r12 = scope[1040]
+70833: r13 = Array(2)
+70836: r14 = "_"
+70841: r13[0] = r14
+70845: r14 = ":"
+70850: r13[1] = r14
+70854: r14 = r12["replace"]
+70860: r2 = APPLY r14 THIS r12 ARGS r13
+70864: r11 = r2
+70867: r10[0] = r11
+70871: r11 = r9["concat"]
+70877: r2 = APPLY r11 THIS r9 ARGS r10
+70881: r8 = r2
+70884: scope[1228] = r8
+70887: r7 = r8
+70890: r8 = window["FormData"]
+70895: r9 = []
+70897: r8 = CONSTRUCT r8 ARGS r9
+70901: scope[1077] = r8
+70904: r7 = r8
+70907: r8 = scope[1077]
+70910: r9 = Array(2)
+70913: r10 = "av"
+70918: r9[0] = r10
+70922: r10 = scope[1041]
+70925: r9[1] = r10
+70929: r10 = r8["append"]
+70935: r2 = APPLY r10 THIS r8 ARGS r9
+70939: r7 = r2
+70942: r8 = scope[1077]
+70945: r9 = Array(2)
+70948: r10 = "__user"
+70953: r9[0] = r10
+70957: r10 = scope[1042]
+70960: r9[1] = r10
+70964: r10 = r8["append"]
+70970: r2 = APPLY r10 THIS r8 ARGS r9
+70974: r7 = r2
+70977: r8 = scope[1077]
+70980: r9 = Array(2)
+70983: r10 = "__a"
+70988: r9[0] = r10
+70992: r10 = "1"
+70997: r9[1] = r10
+71001: r10 = r8["append"]
+71007: r2 = APPLY r10 THIS r8 ARGS r9
+71011: r7 = r2
+71014: r8 = scope[1077]
+71017: r9 = Array(2)
+71020: r10 = "__req"
+71025: r9[0] = r10
+71029: r10 = "o"
+71034: r9[1] = r10
+71038: r10 = r8["append"]
+71044: r2 = APPLY r10 THIS r8 ARGS r9
+71048: r7 = r2
+71051: r8 = scope[1077]
+71054: r9 = Array(2)
+71057: r10 = "fb_dtsg"
+71062: r9[0] = r10
+71066: r10 = scope[1078]
+71069: r9[1] = r10
+71073: r10 = r8["append"]
+71079: r2 = APPLY r10 THIS r8 ARGS r9
+71083: r7 = r2
+71086: r8 = scope[1077]
+71089: r9 = Array(2)
+71092: r10 = "__comet_req"
+71097: r9[0] = r10
+71101: r10 = "11"
+71106: r9[1] = r10
+71110: r10 = r8["append"]
+71116: r2 = APPLY r10 THIS r8 ARGS r9
+71120: r7 = r2
+71123: r8 = scope[1077]
+71126: r9 = Array(2)
+71129: r10 = "dpr"
+71134: r9[0] = r10
+71138: r10 = "1.5"
+71143: r9[1] = r10
+71147: r10 = r8["append"]
+71153: r2 = APPLY r10 THIS r8 ARGS r9
+71157: r7 = r2
+71160: r8 = scope[1077]
+71163: r9 = Array(2)
+71166: r10 = "__dyn"
+71171: r9[0] = r10
+71175: r11 = scope[1079]
+71178: r12 = 452
+71181: r10 = r11(r12)
+71185: r9[1] = r10
+71189: r10 = r8["append"]
+71195: r2 = APPLY r10 THIS r8 ARGS r9
+71199: r7 = r2
+71202: r8 = scope[1077]
+71205: r9 = Array(2)
+71208: r10 = "__csr"
+71213: r9[0] = r10
+71217: r11 = scope[1079]
+71220: r12 = 650
+71223: r10 = r11(r12)
+71227: r9[1] = r10
+71231: r10 = r8["append"]
+71237: r2 = APPLY r10 THIS r8 ARGS r9
+71241: r7 = r2
+71244: r8 = scope[1077]
+71247: r9 = Array(2)
+71250: r10 = "fb_api_caller_class"
+71255: r9[0] = r10
+71259: r10 = "RelayModern"
+71264: r9[1] = r10
+71268: r10 = r8["append"]
+71274: r2 = APPLY r10 THIS r8 ARGS r9
+71278: r7 = r2
+71281: r8 = scope[1077]
+71284: r9 = Array(2)
+71287: r10 = "fb_api_req_friendly_name"
+71292: r9[0] = r10
+71296: r10 = "BusinessContentManagerRescheduleContentMutation"
+71301: r9[1] = r10
+71305: r10 = r8["append"]
+71311: r2 = APPLY r10 THIS r8 ARGS r9
+71315: r7 = r2
+71318: r8 = scope[1077]
+71321: r9 = Array(2)
+71324: r10 = "variables"
+71329: r9[0] = r10
+71333: r11 = window["JSON"]
+71338: r12 = Array(1)
+71341: r13 = {}
+71343: r14 = {}
+71345: r15 = "4"
+71350: r14["client_mutation_id"] = r15
+71356: r15 = scope[1041]
+71359: r14["actor_id"] = r15
+71365: r15 = Array(1)
+71368: r16 = scope[1228]
+71371: r15[0] = r16
+71375: r14["story_ids"] = r15
+71381: r15 = scope[1041]
+71384: r14["page_id"] = r15
+71390: r15 = scope[1703]
+71393: r14["scheduled_publish_time"] = r15
+71399: r13["input"] = r14
+71405: r12[0] = r13
+71409: r13 = r11["stringify"]
+71415: r2 = APPLY r13 THIS r11 ARGS r12
+71419: r10 = r2
+71422: r9[1] = r10
+71426: r10 = r8["append"]
+71432: r2 = APPLY r10 THIS r8 ARGS r9
+71436: r7 = r2
+71439: r8 = scope[1077]
+71442: r9 = Array(2)
+71445: r10 = "server_timestamps"
+71450: r9[0] = r10
+71454: r10 = "true"
+71459: r9[1] = r10
+71463: r10 = r8["append"]
+71469: r2 = APPLY r10 THIS r8 ARGS r9
+71473: r7 = r2
+71476: r8 = scope[1077]
+71479: r9 = Array(2)
+71482: r10 = "doc_id"
+71487: r9[0] = r10
+71491: r10 = "5001941423228398"
+71496: r9[1] = r10
+71500: r10 = r8["append"]
+71506: r2 = APPLY r10 THIS r8 ARGS r9
+71510: r7 = r2
+71513: r8 = scope[5212]
+71516: r9 = 1
+71519: r8["n"] = r9
+71525: r7 = r9
+71528: r8 = window["fetch"]
+71533: r9 = "https://business.facebook.com/api/graphql/"
+71538: r10 = {}
+71540: r11 = "POST"
+71545: r10["method"] = r11
+71551: r11 = scope[1077]
+71554: r10["body"] = r11
+71560: r11 = scope[1083]
+71563: r10["signal"] = r11
+71569: r7 = r8(r9, r10)
+71574: return r7
+71576: r8 = scope[5212]
+71579: r8 = r8["v"]
+71585: scope[1262] = r8
+71588: r7 = r8
+71591: r8 = scope[5212]
+71594: r9 = 2
+71597: r8["n"] = r9
+71603: r7 = r9
+71606: r8 = scope[1262]
+71609: r9 = []
+71611: r10 = r8["text"]
+71617: r2 = APPLY r10 THIS r8 ARGS r9
+71621: r7 = r2
+71624: return r7
+71626: r8 = scope[5212]
+71629: r8 = r8["v"]
+71635: scope[1263] = r8
+71638: r7 = r8
+71641: r8 = scope[5212]
+71644: r9 = 3
+71647: r8["p"] = r9
+71653: r7 = r9
+71656: r9 = window["JSON"]
+71661: r10 = Array(1)
+71664: r12 = scope[1263]
+71667: r13 = Array(2)
+71670: r14 = RegExp("\\n\\{\"label[\\S\\s]+", "gm")
+71678: r13[0] = r14
+71682: r14 = ""
+71687: r13[1] = r14
+71691: r14 = r12["replace"]
+71697: r2 = APPLY r14 THIS r12 ARGS r13
+71701: r11 = r2
+71704: r10[0] = r11
+71708: r11 = r9["parse"]
+71714: r2 = APPLY r11 THIS r9 ARGS r10
+71718: r8 = r2
+71721: scope[5206] = r8
+71724: r7 = r8
+71727: r8 = null
+71730: r9 = scope[5206]
+71733: r8 = r8 === r9
+71737: if r8 goto 71755
+71740: r10 = 0
+71743: r9 = undefined
+71745: r10 = scope[5206]
+71748: r9 = r9 === r10
+71752: r8 = r9
+71755: if r8 goto 71783
+71758: r9 = null
+71761: r11 = scope[5206]
+71764: r11 = r11["data"]
+71770: scope[5205] = r11
+71773: r10 = r11
+71776: r9 = r9 === r10
+71780: r8 = r9
+71783: if r8 goto 71801
+71786: r10 = 0
+71789: r9 = undefined
+71791: r10 = scope[5205]
+71794: r9 = r9 === r10
+71798: r8 = r9
+71801: if r8 goto 71829
+71804: r9 = null
+71807: r11 = scope[5205]
+71810: r11 = r11["publishing_action"]
+71816: scope[5205] = r11
+71819: r10 = r11
+71822: r9 = r9 === r10
+71826: r8 = r9
+71829: if r8 goto 71847
+71832: r10 = 0
+71835: r9 = undefined
+71837: r10 = scope[5205]
+71840: r9 = r9 === r10
+71844: r8 = r9
+71847: if !r8 goto 71860
+71850: r10 = 0
+71853: r9 = undefined
+71855: r8 = r9
+71858: goto 71872
+71860: r10 = scope[5205]
+71863: r10 = r10["mutated_story_ids"]
+71869: r8 = r10
+71872: scope[5207] = r8
+71875: r7 = r8
+71878: r8 = scope[5212]
+71881: r9 = Array(2)
+71884: r10 = 2
+71887: r9[0] = r10
+71891: r11 = window["Array"]
+71896: r12 = Array(1)
+71899: r13 = scope[5207]
+71902: r12[0] = r13
+71906: r13 = r11["isArray"]
+71912: r2 = APPLY r13 THIS r11 ARGS r12
+71916: r10 = r2
+71919: if !r10 goto 71943
+71922: r11 = 0
+71925: r12 = scope[5207]
+71928: r12 = r12["length"]
+71934: r11 = r11 < r12
+71938: r10 = r11
+71941: goto 71955
+71943: r14 = scope[5207]
+71946: r13 = !r14
+71949: r12 = !r13
+71952: r10 = r12
+71955: r9[1] = r10
+71959: r10 = r8["a"]
+71965: r2 = APPLY r10 THIS r8 ARGS r9
+71969: r7 = r2
+71972: return r7
+71974: r8 = scope[5212]
+71977: r9 = 4
+71980: r8["p"] = r9
+71986: r7 = r9
+71989: r8 = scope[5212]
+71992: r8 = r8["v"]
+71998: scope[5208] = r8
+72001: r7 = r8
+72004: r8 = scope[5212]
+72007: r9 = Array(2)
+72010: r10 = 2
+72013: r9[0] = r10
+72017: r11 = RegExp("mutated_story_ids", "")
+72025: r12 = Array(1)
+72028: r13 = scope[1263]
+72031: r12[0] = r13
+72035: r13 = r11["test"]
+72041: r2 = APPLY r13 THIS r11 ARGS r12
+72045: r10 = r2
+72048: r9[1] = r10
+72052: r10 = r8["a"]
+72058: r2 = APPLY r10 THIS r8 ARGS r9
+72062: r7 = r2
+72065: return r7
+72067: goto 70729
+72069: return undefined
+
+=== activation wrapper; PC [110542,110912) ===
+110542: local[1040] = r4
+110545: r6 = scope[475]
+110548: local[1890] = r6
+110551: r7 = scope[999]
+110554: r10 = scope[980]
+110557: r9 = r10()
+110560: r10 = Array(1)
+110563: r11 = function@110597(arity=0, name="")
+110570: local[477] = r11
+110573: r10[0] = r11
+110577: r11 = r9["m"]
+110583: r2 = APPLY r11 THIS r9 ARGS r10
+110587: r8 = r2
+110590: r6 = r7(r8)
+110594: return r6
+110596: return undefined
+110597: r5 = scope[477]
+110600: local[7581] = r5
+110603: local[7582] = undefined
+110605: local[7583] = undefined
+110607: r5 = r3
+110610: scope[7583] = r5
+110613: r7 = scope[980]
+110616: r6 = r7()
+110619: r7 = Array(2)
+110622: r8 = function@110656(arity=1, name="")
+110629: r7[0] = r8
+110633: r8 = scope[7581]
+110636: r7[1] = r8
+110640: r8 = r6["w"]
+110646: r2 = APPLY r8 THIS r6 ARGS r7
+110650: r5 = r2
+110653: return r5
+110655: return undefined
+110656: local[7587] = r4
+110659: r6 = 1
+110662: if !r6 goto 110911
+110665: r6 = scope[7587]
+110668: r6 = r6["n"]
+110674: r7 = 0
+110677: r8 = r7 === r6
+110681: if r8 goto 110714
+110684: r7 = 1
+110687: r8 = r7 === r6
+110691: if r8 goto 110775
+110694: r7 = 2
+110697: r8 = r7 === r6
+110701: if r8 goto 110793
+110704: r7 = 3
+110707: r8 = r7 === r6
+110711: if r8 goto 110842
+110714: r9 = scope[1892]
+110717: r8 = !r9
+110720: scope[7582] = r8
+110723: r7 = r8
+110726: r8 = scope[7582]
+110729: r7 = !r8
+110732: if !r7 goto 110752
+110735: r9 = scope[7587]
+110738: r10 = 2
+110741: r9["n"] = r10
+110747: r8 = r10
+110750: goto 110911
+110752: r8 = scope[7587]
+110755: r9 = 1
+110758: r8["n"] = r9
+110764: r7 = r9
+110767: r8 = scope[1889]
+110770: r7 = r8()
+110773: return r7
+110775: r9 = scope[7587]
+110778: r9 = r9["v"]
+110784: r8 = !r9
+110787: scope[7582] = r8
+110790: r7 = r8
+110793: r8 = scope[7582]
+110796: r7 = !r8
+110799: if !r7 goto 110819
+110802: r9 = scope[7587]
+110805: r10 = 3
+110808: r9["n"] = r10
+110814: r8 = r10
+110817: goto 110911
+110819: r7 = window["Error"]
+110824: r8 = Array(1)
+110827: r9 = "FewFeed: Not activated. Please log in."
+110832: r8[0] = r9
+110836: r7 = CONSTRUCT r7 ARGS r8
+110840: throw r7
+110842: r8 = scope[7587]
+110845: r9 = Array(2)
+110848: r10 = 2
+110851: r9[0] = r10
+110855: r11 = scope[1040]
+110858: r12 = Array(2)
+110861: r14 = 0
+110864: r13 = undefined
+110866: r12[0] = r13
+110870: r13 = scope[7583]
+110873: r12[1] = r13
+110877: r13 = r11["apply"]
+110883: r2 = APPLY r13 THIS r11 ARGS r12
+110887: r10 = r2
+110890: r9[1] = r10
+110894: r10 = r8["a"]
+110900: r2 = APPLY r10 THIS r8 ARGS r9
+110904: r7 = r2
+110907: return r7
+110909: goto 110659
+110911: return undefined

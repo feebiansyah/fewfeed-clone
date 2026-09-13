@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "publicResources": 8,
+  "parsedBundles": 7,
+  "sourceMap404": 3,
+  "instructions": 68318,
+  "pollLimit": 15,
+  "delayMs": 4000,
+  "explicitBridgeCallsFound": false,
+  "suspectedSecretLiterals": 0,
+  "unchangedReferenceFiles": 4,
+  "note": "Static consistency checks only; no Meta/browser execution; server-side behavior untested."
+}

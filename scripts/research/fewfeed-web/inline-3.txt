@@ -1,0 +1,1 @@
+self.__VINEXT_RSC_NAV__={"pathname":"/tool/fb-one-card-picture-carousel","searchParams":[]}
