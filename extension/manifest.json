@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "FewClone One Card Spike 1",
+  "version": "0.1.0",
+  "description": "Development spike: image, creative, story ID only. Live authentication blocked.",
+  "host_permissions": ["https://graph.facebook.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{
+    "matches": ["http://localhost/dev/one-card-spike"],
+    "js": ["content.js"],
+    "run_at": "document_start",
+    "all_frames": false
+  }],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'none'; connect-src https://graph.facebook.com" }
+}
