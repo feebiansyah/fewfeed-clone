@@ -7,7 +7,14 @@ export type MetaRequestInit = Omit<RequestInit, "headers"> & {
 };
 
 function assertAllowedPath(path: string): void {
-  if (!/^\/(?:oauth\/access_token|me)(?:\?|$)/.test(path)) {
+  const allowed =
+    /^\/oauth\/access_token(?:\?|$)/.test(path) ||
+    /^\/me(?:\?|$)/.test(path) ||
+    /^\/me\/accounts(?:\?|$)/.test(path) ||
+    /^\/me\/adaccounts(?:\?|$)/.test(path) ||
+    /^\/me\/businesses(?:\?|$)/.test(path);
+
+  if (!allowed) {
     throw new MetaApiError("META_PATH_NOT_ALLOWED");
   }
 }
