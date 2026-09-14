@@ -1,8 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
@@ -10,4 +5,152 @@ generator client {
 
 datasource db {
   provider = "mysql"
+}
+
+enum MetaConnectionStatus {
+  CONNECTED
+  REAUTH_REQUIRED
+  ERROR
+}
+
+enum AssetAccessStatus {
+  AVAILABLE
+  STALE
+}
+
+enum OneCardPreparationStatus {
+  PENDING
+  UPLOADING_IMAGE
+  CREATING_CREATIVE
+  POLLING_STORY
+  SUCCEEDED
+  FAILED
+}
+
+model User {
+  id             String               @id @default(cuid())
+  email          String               @unique
+  passwordHash   String
+  isActive       Boolean              @default(true)
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
+  sessions       Session[]
+  metaConnection MetaConnection?
+  pages          FacebookPage[]
+  adAccounts     AdAccount[]
+  preparations   OneCardPreparation[]
+}
+
+model Session {
+  id         String   @id @default(cuid())
+  tokenHash  String   @unique
+  userId     String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  lastSeenAt DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model MetaConnection {
+  id                   String               @id @default(cuid())
+  userId               String               @unique
+  metaUserId           String
+  metaDisplayName      String?
+  encryptedAccessToken String               @db.Text
+  tokenExpiresAt       DateTime?
+  status               MetaConnectionStatus @default(CONNECTED)
+  lastSyncAt           DateTime?
+  lastErrorCode        String?
+  createdAt            DateTime             @default(now())
+  updatedAt            DateTime             @updatedAt
+  user                 User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  businesses           BusinessManager[]
+  pages                FacebookPage[]
+  adAccounts           AdAccount[]
+}
+
+model BusinessManager {
+  id               String            @id @default(cuid())
+  userId           String
+  metaConnectionId String
+  businessId       String
+  name             String
+  accessStatus     AssetAccessStatus @default(AVAILABLE)
+  lastSeenAt       DateTime          @default(now())
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  connection       MetaConnection    @relation(fields: [metaConnectionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, businessId])
+  @@index([metaConnectionId])
+}
+
+model FacebookPage {
+  id               String               @id @default(cuid())
+  userId           String
+  metaConnectionId String
+  pageId           String
+  name             String
+  businessId       String?
+  accessStatus     AssetAccessStatus    @default(AVAILABLE)
+  lastSeenAt       DateTime             @default(now())
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  connection       MetaConnection       @relation(fields: [metaConnectionId], references: [id], onDelete: Cascade)
+  preparations     OneCardPreparation[]
+
+  @@unique([userId, pageId])
+  @@index([metaConnectionId])
+  @@index([userId, accessStatus])
+}
+
+model AdAccount {
+  id               String               @id @default(cuid())
+  userId           String
+  metaConnectionId String
+  accountId        String
+  graphId          String
+  name             String
+  accountStatus    Int?
+  businessId       String?
+  accessStatus     AssetAccessStatus    @default(AVAILABLE)
+  isDefaultOneCard Boolean              @default(false)
+  lastSeenAt       DateTime             @default(now())
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+  user             User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  connection       MetaConnection       @relation(fields: [metaConnectionId], references: [id], onDelete: Cascade)
+  preparations     OneCardPreparation[]
+
+  @@unique([userId, accountId])
+  @@index([metaConnectionId])
+  @@index([userId, accessStatus])
+}
+
+model OneCardPreparation {
+  id                     String                   @id @default(cuid())
+  userId                 String
+  facebookPageId         String
+  adAccountId            String
+  imageHash              String?
+  imageAssetUrl          String?                  @db.Text
+  creativeId             String?
+  effectiveObjectStoryId String?
+  status                 OneCardPreparationStatus @default(PENDING)
+  pollAttempts           Int                      @default(0)
+  safeErrorCode          String?
+  safeErrorMessage       String?                  @db.Text
+  createdAt              DateTime                 @default(now())
+  updatedAt              DateTime                 @updatedAt
+  user                   User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  page                   FacebookPage             @relation(fields: [facebookPageId], references: [id])
+  adAccount              AdAccount                @relation(fields: [adAccountId], references: [id])
+
+  @@index([userId, createdAt])
+  @@index([facebookPageId])
+  @@index([adAccountId])
 }
