@@ -16,6 +16,27 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Create an internal user
+
+There is no public registration flow. An administrator creates each website
+user from a terminal. Set `DATABASE_URL` in the server environment, then use a
+temporary password environment variable in PowerShell:
+
+```powershell
+$env:NEW_USER_PASSWORD = Read-Host "New user password" -AsSecureString |
+  ForEach-Object { [System.Net.NetworkCredential]::new("", $_).Password }
+
+try {
+  npm run user:create -- --email user@example.com
+}
+finally {
+  Remove-Item Env:NEW_USER_PASSWORD -ErrorAction SilentlyContinue
+}
+```
+
+Passwords must contain at least 12 characters. The command prints only the
+normalized email after success; it never prints the password or password hash.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
