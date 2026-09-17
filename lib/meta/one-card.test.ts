@@ -30,6 +30,7 @@ import {
   prepareOneCard,
   type PrepareOneCardInput,
 } from "@/lib/meta/one-card";
+import { MetaApiError } from "@/lib/meta/errors";
 
 const validInput: PrepareOneCardInput = {
   userId: "user-a",
@@ -249,6 +250,38 @@ describe("prepareOneCard", () => {
       }),
     });
     expect(JSON.stringify(mocks.preparationUpdate.mock.calls)).not.toContain("raw-meta-token");
+  });
+
+  it("persists only sanitized Meta diagnostics when creative creation fails", async () => {
+    mocks.metaFetch.mockImplementation((path: string) => {
+      if (path === "/act_456/adimages") {
+        return { images: { uploaded: { hash: "image-hash", url: "https://images.example/image.png" } } };
+      }
+      throw new MetaApiError("META_API_ERROR", {
+        status: 400,
+        metaCode: 100,
+        metaSubcode: 1815,
+        metaMessage: "Invalid sanitized creative parameter.",
+      });
+    });
+
+    await expect(prepareOneCard(validInput)).rejects.toThrow("CREATIVE_CREATE_FAILED");
+
+    const failedUpdate = mocks.preparationUpdate.mock.calls.find(
+      ([value]) => value.data.status === "FAILED",
+    )?.[0];
+    expect(failedUpdate).toEqual({
+      where: { id: "preparation-1" },
+      data: {
+        status: "FAILED",
+        pollAttempts: 0,
+        safeErrorCode: "CREATIVE_CREATE_FAILED",
+        safeErrorMessage: "Creative creation failed (HTTP 400, Meta code 100, subcode 1815). Invalid sanitized creative parameter.",
+      },
+    });
+    expect(JSON.stringify(failedUpdate)).not.toMatch(/raw-meta-token|encrypted-token/);
+    expect(mocks.metaFetch.mock.calls.filter(([path]) => path === "/act_456/adimages")).toHaveLength(1);
+    expect(mocks.metaFetch.mock.calls.filter(([path]) => path === "/act_456/adcreatives")).toHaveLength(1);
   });
 
   it("never calls campaign, adset, ad, budget, publish, scheduled-post, or GraphQL endpoints", async () => {

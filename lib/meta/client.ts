@@ -6,6 +6,45 @@ export type MetaRequestInit = Omit<RequestInit, "headers"> & {
   headers?: Record<string, string>;
 };
 
+type UnknownRecord = Record<string, unknown>;
+
+function isRecord(value: unknown): value is UnknownRecord {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function sanitizeMetaMessage(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+
+  const sanitized = value
+    .replace(/[\u0000-\u001f\u007f-\u009f]/g, " ")
+    .replace(/(https?:\/\/[^\s?#<>"']+)\?[^\s#<>"']*/gi, "$1?[REDACTED]")
+    .replace(/\bBearer\s+[^\s,;]+/gi, "Bearer [REDACTED]")
+    .replace(/\b(access_token|appsecret_proof)\b\s*[:=]\s*(?:"[^"]*"|'[^']*'|[^\s,;&]+)/gi, "$1=[REDACTED]")
+    .replace(/\b[A-Za-z0-9_-]{32,}\b/g, "[REDACTED]")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 300);
+
+  return sanitized || null;
+}
+
+async function safeMetaErrorDetails(response: Response) {
+  try {
+    const body: unknown = await response.json();
+    if (!isRecord(body) || !isRecord(body.error)) return {};
+
+    const code = body.error.code;
+    const subcode = body.error.error_subcode;
+    return {
+      metaCode: typeof code === "number" && Number.isFinite(code) ? code : null,
+      metaSubcode: typeof subcode === "number" && Number.isFinite(subcode) ? subcode : null,
+      metaMessage: sanitizeMetaMessage(body.error.message),
+    };
+  } catch {
+    return {};
+  }
+}
+
 function assertAllowedPath(path: string, method: string): void {
   const allowedRead = method === "GET" && (
     /^\/oauth\/access_token(?:\?|$)/.test(path)
@@ -53,12 +92,13 @@ export async function metaFetch<T>(
   }
 
   if (!response.ok) {
-    throw new MetaApiError("META_API_ERROR", response.status);
+    const details = await safeMetaErrorDetails(response);
+    throw new MetaApiError("META_API_ERROR", { status: response.status, ...details });
   }
 
   try {
     return await response.json() as T;
   } catch {
-    throw new MetaApiError("META_INVALID_RESPONSE", response.status);
+    throw new MetaApiError("META_INVALID_RESPONSE", { status: response.status });
   }
 }

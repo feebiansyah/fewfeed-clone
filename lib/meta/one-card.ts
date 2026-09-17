@@ -2,6 +2,7 @@ import { setTimeout as sleep } from "node:timers/promises";
 
 import { db } from "@/lib/db";
 import { metaFetch } from "@/lib/meta/client";
+import { MetaApiError } from "@/lib/meta/errors";
 import { decryptSecret } from "@/lib/security/secrets";
 
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
@@ -72,12 +73,25 @@ export class SafeOneCardError extends Error {
   readonly safeCode: SafeCode;
   readonly safeMessage: string;
 
-  constructor(safeCode: SafeCode) {
+  constructor(safeCode: SafeCode, safeMessage = SAFE_MESSAGES[safeCode]) {
     super(safeCode);
     this.name = "SafeOneCardError";
     this.safeCode = safeCode;
-    this.safeMessage = SAFE_MESSAGES[safeCode];
+    this.safeMessage = safeMessage.slice(0, 500);
   }
+}
+
+function creativeMetaFailure(error: MetaApiError): SafeOneCardError {
+  const metadata: string[] = [];
+  if (error.status !== null) metadata.push(`HTTP ${error.status}`);
+  if (error.metaCode !== null) metadata.push(`Meta code ${error.metaCode}`);
+  if (error.metaSubcode !== null) metadata.push(`subcode ${error.metaSubcode}`);
+
+  const summary = metadata.length > 0
+    ? `Creative creation failed (${metadata.join(", ")}).`
+    : SAFE_MESSAGES.CREATIVE_CREATE_FAILED;
+  const safeMessage = error.metaMessage ? `${summary} ${error.metaMessage}` : summary;
+  return new SafeOneCardError("CREATIVE_CREATE_FAILED", safeMessage);
 }
 
 function validateInput(input: PrepareOneCardInput): void {
@@ -298,13 +312,15 @@ export async function prepareOneCard(
   } catch (error) {
     const safeError = error instanceof SafeOneCardError
       ? error
-      : new SafeOneCardError(
-        stage === "upload"
-          ? "IMAGE_UPLOAD_FAILED"
-          : stage === "creative"
-            ? "CREATIVE_CREATE_FAILED"
-            : "POLL_FAILED",
-      );
+      : stage === "creative" && error instanceof MetaApiError
+        ? creativeMetaFailure(error)
+        : new SafeOneCardError(
+          stage === "upload"
+            ? "IMAGE_UPLOAD_FAILED"
+            : stage === "creative"
+              ? "CREATIVE_CREATE_FAILED"
+              : "POLL_FAILED",
+        );
     await markFailed(preparation.id, safeError, attempts);
     throw safeError;
   }
