@@ -6,15 +6,21 @@ export type MetaRequestInit = Omit<RequestInit, "headers"> & {
   headers?: Record<string, string>;
 };
 
-function assertAllowedPath(path: string): void {
-  const allowed =
-    /^\/oauth\/access_token(?:\?|$)/.test(path) ||
-    /^\/me(?:\?|$)/.test(path) ||
-    /^\/me\/accounts(?:\?|$)/.test(path) ||
-    /^\/me\/adaccounts(?:\?|$)/.test(path) ||
-    /^\/me\/businesses(?:\?|$)/.test(path);
+function assertAllowedPath(path: string, method: string): void {
+  const allowedRead = method === "GET" && (
+    /^\/oauth\/access_token(?:\?|$)/.test(path)
+    || /^\/me(?:\?|$)/.test(path)
+    || /^\/me\/accounts(?:\?|$)/.test(path)
+    || /^\/me\/adaccounts(?:\?|$)/.test(path)
+    || /^\/me\/businesses(?:\?|$)/.test(path)
+    || /^\/\d{1,30}\?fields=id%2Ceffective_object_story_id$/.test(path)
+  );
+  const allowedWrite = method === "POST" && (
+    /^\/act_\d{1,30}\/adimages$/.test(path)
+    || /^\/act_\d{1,30}\/adcreatives$/.test(path)
+  );
 
-  if (!allowed) {
+  if (!allowedRead && !allowedWrite) {
     throw new MetaApiError("META_PATH_NOT_ALLOWED");
   }
 }
@@ -23,7 +29,8 @@ export async function metaFetch<T>(
   path: string,
   init: MetaRequestInit = {},
 ): Promise<T> {
-  assertAllowedPath(path);
+  const method = (init.method ?? "GET").toUpperCase();
+  assertAllowedPath(path, method);
   const { graphVersion } = getMetaConfig();
   const url = new URL(`https://graph.facebook.com/${graphVersion}${path}`);
   const headers = new Headers(init.headers);
